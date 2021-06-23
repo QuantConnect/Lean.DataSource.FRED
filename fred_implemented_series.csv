@@ -1,0 +1,565 @@
+JPINTDDMEJPY|Japan Intervention: Japanese Bank purchases of DM/Euro against JPY|100 Million Yen
+JPINTDEXR|Japan Intervention: Japanese Bank purchases of USD against DM|100 Million Yen
+JPINTDUSDRP|Japan Intervention: Japanese Bank purchases of USD against Rupiah|100 Million Yen
+USINTDMRKTJPY|U.S. Intervention: in Market Transactions in the JPY/USD (Millions of USD)|Millions of USD
+USINTDCSOTH|U.S. Intervention: With-Customer Transactions in Other Currencies (Millions of USD)|Millions of USD
+USINTDCSJPY|U.S. Intervention: With-Customer Transactions in the JPY/USD (Millions of USD)|Millions of USD
+USINTDCSDM|U.S. Intervention: With-Customer Transactions in the DEM/USD (Euro since 1999) (Millions of USD)|Millions of USD
+USINTDMRKTOTH|U.S. Intervention: in Market Transactions in Other Currencies (Millions of USD)|Millions of USD
+TRINTDEXR|Turkish Intervention: Central Bank of Turkey Purchases of USD (Millions of USD)|Millions of USD
+JPINTDUSDJPY|Japan Intervention: Japanese Bank purchases of USD against JPY|100 Million Yen
+USINTDMRKTDM|U.S. Intervention: in Market Transactions in the DEM/USD (Euro since 1999) (Millions of USD)|Millions of USD
+DTWEXM|Trade Weighted U.S. Dollar Index: Major Currencies, Goods|Index Mar 1973=100
+DTWEXO|Trade Weighted U.S. Dollar Index: Other Important Trading Partners, Goods|Index Jan 1997=100
+DTWEXB|Trade Weighted U.S. Dollar Index: Broad, Goods|Index Jan 1997=100
+CBETHUSD|Coinbase Ethereum|U.S. Dollars
+CBLTCUSD|Coinbase Litecoin|U.S. Dollars
+CBBTCUSD|Coinbase Bitcoin|U.S. Dollars
+CBBCHUSD|Coinbase Bitcoin Cash|U.S. Dollars
+VXGOGCLS|CBOE Equity VIX on Google|Index
+VXDCLS|CBOE DJIA Volatility Index|Index
+VXGSCLS|CBOE Equity VIX on Goldman Sachs|Index
+VXIBMCLS|CBOE Equity VIX on IBM|Index
+VXAZNCLS|CBOE Equity VIX on Amazon|Index
+VXOCLS|CBOE S&P 100 Volatility Index: VXO|Index
+VXNCLS|CBOE NASDAQ 100 Volatility Index|Index
+VXTYN|CBOE 10-Year Treasury Note Volatility Futures|Index
+RVXCLS|CBOE Russell 2000 Volatility Index|Index
+VXVCLS|CBOE S&P 500 3-Month Volatility Index|Index
+VXAPLCLS|CBOE Equity VIX on Apple|Index
+CHINTDCHFDM|Swiss Intervention: Swiss National Bank Purchases of DEM against CHF (Millions of DEM)|Millions of DEM
+CHINTDUSDDM|Swiss Intervention: Swiss National Bank Purchases of USD against DEM (Millions of USD)|Millions of USD
+CHINTDUSDJPY|Swiss Intervention: Swiss National Bank Purchases of USD against JPY (Millions of USD)|Millions of USD
+CHINTDCHFUSD|Swiss Intervention: Swiss National Bank Purchases of USD against CHF (Millions of USD)|Millions of USD
+DCPN3M|3-Month AA Nonfinancial Commercial Paper Rate|Percent
+DCPN30|1-Month AA Nonfinancial Commercial Paper Rate|Percent
+DCPN2M|2-Month AA Nonfinancial Commercial Paper Rate|Percent
+DCPF3M|3-Month AA Financial Commercial Paper Rate|Percent
+DCPF2M|2-Month AA Financial Commercial Paper Rate|Percent
+DCPF1M|1-Month AA Financial Commercial Paper Rate|Percent
+BAMLEMPTPRVICRPITRIV|ICE BofAML Private Sector Issuers Emerging Markets Corporate Plus Sub-Index Total Return Index Value|Index
+BAMLEMPVPRIVSLCRPIUSTRIV|ICE BofAML Private Sector Issuers US Emerging Markets Liquid Corporate Plus Sub-Index Total Return Index Value|Index
+BAMLEMPBPUBSICRPITRIV|ICE BofAML Public Sector Issuers Emerging Markets Corporate Plus Sub-Index Total Return Index Value|Index
+BAMLEMPTPRVICRPIOAS|ICE BofAML Private Sector Issuers Emerging Markets Corporate Plus Sub-Index Option-Adjusted Spread|Percent
+BAMLEMPVPRIVSLCRPIUSOAS|ICE BofAML Private Sector Issuers US Emerging Markets Liquid Corporate Plus Sub-Index Option-Adjusted Spread|Percent
+BAMLEMPBPUBSICRPIOAS|ICE BofAML Public Sector Issuers Emerging Markets Corporate Plus Sub-Index Option-Adjusted Spread|Percent
+BAMLEMPTPRVICRPIEY|ICE BofAML Private Sector Issuers Emerging Markets Corporate Plus Sub-Index Effective Yield|Percent
+BAMLEMPVPRIVSLCRPIUSEY|ICE BofAML Private Sector Issuers US Emerging Markets Liquid Corporate Plus Sub-Index Effective Yield|Percent
+BAMLEMPBPUBSICRPIEY|ICE BofAML Public Sector Issuers Emerging Markets Corporate Plus Sub-Index Effective Yield|Percent
+VXGDXCLS|CBOE Gold Miners ETF Volatility Index|Index
+VXFXICLS|CBOE China ETF Volatility Index|Index
+VXEWZCLS|CBOE Brazil ETF Volatility Index|Index
+VXEEMCLS|CBOE Emerging Markets ETF Volatility Index|Index
+EVZCLS|CBOE EuroCurrency ETF Volatility Index|Index
+GVZCLS|CBOE Gold ETF Volatility Index|Index
+OVXCLS|CBOE Crude Oil ETF Volatility Index|Index
+VXSLVCLS|CBOE Silver ETF Volatility Index|Index
+VXXLECLS|CBOE Energy Sector ETF Volatility Index|Index
+NONFIN14A2P2VOL|Number of Issues, with a Maturity Between 1 and 4 Days, Used in Calculating the A2/P2 Nonfinancial Commercial Paper Rates|Number
+NONFIN59A2P2VOL|Number of Issues, with a Maturity Between 5 and 9 Days, Used in Calculating the A2/P2 Nonfinancial Commercial Paper Rates|Number
+NONFIN59A2P2AMT|Total Value of Issues, with a Maturity Between 5 and 9 Days, Used in Calculating the A2/P2 Nonfinancial Commercial Paper Rates|Millions of Dollars
+NONFIN4180AAVOL|Number of Issues, with a Maturity Between 41 and 80 Days, Used in Calculating the AA Nonfinancial Commercial Paper Rates|Number
+ABGT80AAAMT|Total Value of Issues, with a Maturity Greater Than 80 Days, Used in Calculating the AA Asset-Backed Commercial Paper Rates|Millions of Dollars
+NONFIN4180AAAMT|Total Value of Issues, with a Maturity Between 41 and 80 Days, Used in Calculating the AA Nonfinancial Commercial Paper Rates|Millions of Dollars
+NONFIN4180A2P2VOL|Number of Issues, with a Maturity Between 41 and 80 Days, Used in Calculating the A2/P2 Nonfinancial Commercial Paper Rates|Number
+NONFIN4180A2P2AMT|Total Value of Issues, with a Maturity Between 41 and 80 Days, Used in Calculating the A2/P2 Nonfinancial Commercial Paper Rates|Millions of Dollars
+NONFIN2140AAVOL|Number of Issues, with a Maturity Between 21 and 40 Days, Used in Calculating the AA Nonfinancial Commercial Paper Rates|Number
+NONFIN2140AAAMT|Total Value of Issues, with a Maturity Between 21 and 40 Days, Used in Calculating the AA Nonfinancial Commercial Paper Rates|Millions of Dollars
+NONFIN2140A2P2VOL|Number of Issues, with a Maturity Between 21 and 40 Days, Used in Calculating the A2/P2 Nonfinancial Commercial Paper Rates|Number
+NONFIN2140A2P2AMT|Total Value of Issues, with a Maturity Between 21 and 40 Days, Used in Calculating the A2/P2 Nonfinancial Commercial Paper Rates|Millions of Dollars
+NONFIN14AAVOL|Number of Issues, with a Maturity Between 1 and 4 Days, Used in Calculating the AA Nonfinancial Commercial Paper Rates|Number
+NONFIN1020A2P2VOL|Number of Issues, with a Maturity Between 10 and 20 Days, Used in Calculating the A2/P2 Nonfinancial Commercial Paper Rates|Number
+NONFIN1020AAAMT|Total Value of Issues, with a Maturity Between 10 and 20 Days, Used in Calculating the AA Nonfinancial Commercial Paper Rates|Millions of Dollars
+AB2140AAAMT|Total Value of Issues, with a Maturity Between 21 and 40 Days, Used in Calculating the AA Asset-Backed Commercial Paper Rates|Millions of Dollars
+NONFIN1020AAVOL|Number of Issues, with a Maturity Between 10 and 20 Days, Used in Calculating the AA Nonfinancial Commercial Paper Rates|Number
+NONFIN14A2P2AMT|Total Value of Issues, with a Maturity Between 1 and 4 Days, Used in Calculating the A2/P2 Nonfinancial Commercial Paper Rates|Millions of Dollars
+NONFIN14AAAMT|Total Value of Issues, with a Maturity Between 1 and 4 Days, Used in Calculating the AA Nonfinancial Commercial Paper Rates|Millions of Dollars
+MKT14MKTAMT|Total Value of Commercial Paper Issues with a Maturity Between 1 and 4 Days|Millions of Dollars
+NONFIN1020A2P2AMT|Total Value of Issues, with a Maturity Between 10 and 20 Days, Used in Calculating the A2/P2 Nonfinancial Commercial Paper Rates|Millions of Dollars
+FINGT80AAVOL|Number of Issues, with a Maturity Greater Than 80 Days, Used in Calculating the AA Financial Commercial Paper Rates|Number
+FIN1020AAVOL|Number of Issues, with a Maturity Between 10 and 20 Days, Used in Calculating the AA Financial Commercial Paper Rates|Number
+FIN14AAAMT|Total Value of Issues, with a Maturity Between 1 and 4 Days, Used in Calculating the AA Financial Commercial Paper Rates|Millions of Dollars
+FIN14AAVOL|Number of Issues, with a Maturity Between 1 and 4 Days, Used in Calculating the AA Financial Commercial Paper Rates|Number
+MKT1020MKTAMT|Total Value of Commercial Paper Issues with a Maturity Between 10 and 20 Days|Millions of Dollars
+MKT1020MKTVOL|Number of Commercial Paper Issues with a Maturity Between 10 and 20 Days|Number
+FIN2140AAAMT|Total Value of Issues, with a Maturity Between 21 and 40 Days, Used in Calculating the AA Financial Commercial Paper Rates|Millions of Dollars
+MKT14MKTVOL|Number of Commercial Paper Issues with a Maturity Between 1 and 4 Days|Number
+MKT2140MKTAMT|Total Value of Issuers of Commercial Paper with a Maturity Between 21 and 40 Days|Millions of Dollars
+MKT2140MKTVOL|Number of Commercial Paper Issues with a Maturity Between 21 and 40 Days|Number
+FIN2140AAVOL|Number of Issues, with a Maturity Between 21 and 40 Days, Used in Calculating the AA Financial Commercial Paper Rates|Number
+MKT4180MKTAMT|Total Value of Issuers of Commercial Paper with a Maturity Between 41 and 80 Days|Millions of Dollars
+NONFIN59AAAMT|Total Value of Issues, with a Maturity Between 5 and 9 Days, Used in Calculating the AA Nonfinancial Commercial Paper Rates|Millions of Dollars
+MKT4180MKTVOL|Number of Commercial Paper Issues with a Maturity Between 41 and 80 Days|Number
+MKT59MKTVOL|Number of Commercial Paper Issues with a Maturity Between 5 and 9 Days|Number
+MKTGT80MKTAMT|Total Value of Issuers of Commercial Paper with a Maturity Greater Than 80 Days|Millions of Dollars
+MKTGT80MKTVOL|Number of Commercial Paper Issues with a Maturity Greater Than 80 Days|Number
+FIN4180AAAMT|Total Value of Issues, with a Maturity Between 41 and 80 Days, Used in Calculating the AA Financial Commercial Paper Rates|Millions of Dollars
+FIN4180AAVOL|Number of Issues, with a Maturity Between 41 and 80 Days, Used in Calculating the AA Financial Commercial Paper Rates|Number
+AB4180AAAMT|Total Value of Issues, with a Maturity Between 41 and 80 Days, Used in Calculating the AA Asset-Backed Commercial Paper Rates|Millions of Dollars
+FIN59AAAMT|Total Value of Issues, with a Maturity Between 5 and 9 Days, Used in Calculating the AA Financial Commercial Paper Rates|Millions of Dollars
+FIN59AAVOL|Number of Issues, with a Maturity Between 5 and 9 Days, Used in Calculating the AA Financial Commercial Paper Rates|Number
+FINGT80AAAMT|Total Value of Issues, with a Maturity Greater Than 80 Days, Used in Calculating the AA Financial Commercial Paper Rates|Millions of Dollars
+FIN1020AAAMT|Total Value of Issues, with a Maturity Between 10 and 20 Days, Used in Calculating the AA Financial Commercial Paper Rates|Millions of Dollars
+AB2140AAVOL|Number of Issues, with a Maturity Between 21 and 40 Days, Used in Calculating the AA Asset-Backed Commercial Paper Rates|Number
+MKT59MKTAMT|Total Value of Issuers of Commercial Paper with a Maturity Between 5 and 9 Days|Millions of Dollars
+ABGT80AAVOL|Number of Issues, with a Maturity Greater Than 80 Days, Used in Calculating the AA Asset-Backed Commercial Paper Rates|Number
+NONFIN59AAVOL|Number of Issues, with a Maturity Between 5 and 9 Days, Used in Calculating the AA Nonfinancial Commercial Paper Rates|Number
+RIFSPPAAAD15NB|15-Day AA Asset-backed Commercial Paper Interest Rate|Percent
+AB59AAAMT|Total Value of Issues, with a Maturity Between 5 and 9 Days, Used in Calculating the AA Asset-Backed Commercial Paper Rates|Millions of Dollars
+AB4180AAVOL|Number of Issues, with a Maturity Between 41 and 80 Days, Used in Calculating the AA Asset-Backed Commercial Paper Rates|Number
+RIFSPPNA2P2D15NB|15-Day A2/P2 Nonfinancial Commercial Paper Interest Rate|Percent
+RIFSPPNA2P2D07NB|7-Day A2/P2 Nonfinancial Commercial Paper Interest Rate|Percent
+RIFSPPNA2P2D01NB|Overnight A2/P2 Nonfinancial Commercial Paper Interest Rate|Percent
+RIFSPPFAAD90NB|90-Day AA Financial Commercial Paper Interest Rate|Percent
+RIFSPPAAAD01NB|Overnight AA Asset-backed Commercial Paper Interest Rate|Percent
+RIFSPPNA2P2D30NB|30-Day A2/P2 Nonfinancial Commercial Paper Interest Rate|Percent
+RIFSPPFAAD60NB|60-Day AA Financial Commercial Paper Interest Rate|Percent
+RIFSPPFAAD30NB|30-Day AA Financial Commercial Paper Interest Rate|Percent
+NONFINGT80A2P2AMT|Total Value of Issues, with a Maturity Greater Than 80 Days, Used in Calculating the A2/P2 Nonfinancial Commercial Paper Rates|Millions of Dollars
+RIFSPPAAAD30NB|30-Day AA Asset-backed Commercial Paper Interest Rate|Percent
+RIFSPPAAAD60NB|60-Day AA Asset-backed Commercial Paper Interest Rate|Percent
+RIFSPPAAAD90NB|90-Day AA Asset-backed Commercial Paper Interest Rate|Percent
+RIFSPPFAAD15NB|15-Day AA Financial Commercial Paper Interest Rate|Percent
+RIFSPPFAAD07NB|7-Day AA Financial Commercial Paper Interest Rate|Percent
+RIFSPPAAAD07NB|7-Day AA Asset-backed Commercial Paper Interest Rate|Percent
+RIFSPPFAAD01NB|Overnight AA Financial Commercial Paper Interest Rate|Percent
+RIFSPPNA2P2D60NB|60-Day A2/P2 Nonfinancial Commercial Paper Interest Rate|Percent
+AB59AAVOL|Number of Issues, with a Maturity Between 5 and 9 Days, Used in Calculating the AA Asset-Backed Commercial Paper Rates|Number
+AB14AAVOL|Number of Issues, with a Maturity Between 1 and 4 Days, Used in Calculating the AA Asset-Backed Commercial Paper Rates|Number
+NONFINGT80A2P2VOL|Number of Issues, with a Maturity Greater Than 80 Days, Used in Calculating the A2/P2 Nonfinancial Commercial Paper Rates|Number
+AB14AAAMT|Total Value of Issues, with a Maturity Between 1 and 4 Days, Used in Calculating the AA Asset-Backed Commercial Paper Rates|Millions of Dollars
+RIFSPPNA2P2D90NB|90-Day A2/P2 Nonfinancial Commercial Paper Interest Rate|Percent
+AB1020AAVOL|Number of Issues, with a Maturity Between 10 and 20 Days, Used in Calculating the AA Asset-Backed Commercial Paper Rates|Number
+NONFINGT80AAAMT|Total Value of Issues, with a Maturity Greater Than 80 Days, Used in Calculating the AA Nonfinancial Commercial Paper Rates|Millions of Dollars
+RIFSPPNAAD01NB|Overnight AA Nonfinancial Commercial Paper Interest Rate|Percent
+AB1020AAAMT|Total Value of Issues, with a Maturity Between 10 and 20 Days, Used in Calculating the AA Asset-Backed Commercial Paper Rates|Millions of Dollars
+RIFSPPNAAD07NB|7-Day AA Nonfinancial Commercial Paper Interest Rate|Percent
+RIFSPPNAAD90NB|90-Day AA Nonfinancial Commercial Paper Interest Rate|Percent
+RIFSPPNAAD15NB|15-Day AA Nonfinancial Commercial Paper Interest Rate|Percent
+RIFSPPNAAD30NB|30-Day AA Nonfinancial Commercial Paper Interest Rate|Percent
+RIFSPPNAAD60NB|60-Day AA Nonfinancial Commercial Paper Interest Rate|Percent
+NONFINGT80AAVOL|Number of Issues, with a Maturity Greater Than 80 Days, Used in Calculating the AA Nonfinancial Commercial Paper Rates|Number
+DEXSFUS|South Africa / U.S. Foreign Exchange Rate|South African Rand to One U.S. Dollar
+DEXNOUS|Norway / U.S. Foreign Exchange Rate|Norwegian Kroner to One U.S. Dollar
+DEXMXUS|Mexico / U.S. Foreign Exchange Rate|Mexican New Pesos to One U.S. Dollar
+DEXMAUS|Malaysia / U.S. Foreign Exchange Rate|Malaysian Ringgit to One U.S. Dollar
+DEXKOUS|South Korea / U.S. Foreign Exchange Rate|South Korean Won to One U.S. Dollar
+DEXJPUS|Japan / U.S. Foreign Exchange Rate|Japanese Yen to One U.S. Dollar
+DEXDNUS|Denmark / U.S. Foreign Exchange Rate|Danish Kroner to One U.S. Dollar
+DEXHKUS|Hong Kong / U.S. Foreign Exchange Rate|Hong Kong Dollars to One U.S. Dollar
+DEXCHUS|China / U.S. Foreign Exchange Rate|Chinese Yuan to One U.S. Dollar
+DEXCAUS|Canada / U.S. Foreign Exchange Rate|Canadian Dollars to One U.S. Dollar
+DEXBZUS|Brazil / U.S. Foreign Exchange Rate|Brazilian Reals to One U.S. Dollar
+DEXINUS|India / U.S. Foreign Exchange Rate|Indian Rupees to One U.S. Dollar
+DEXSDUS|Sweden / U.S. Foreign Exchange Rate|Swedish Kronor to One U.S. Dollar
+DEXSIUS|Singapore / U.S. Foreign Exchange Rate|Singapore Dollars to One U.S. Dollar
+DEXSLUS|Sri Lanka / U.S. Foreign Exchange Rate|Sri Lankan Rupees to One U.S. Dollar
+DEXSZUS|Switzerland / U.S. Foreign Exchange Rate|Swiss Francs to One U.S. Dollar
+DEXTAUS|Taiwan / U.S. Foreign Exchange Rate|New Taiwan Dollars to One U.S. Dollar
+DEXTHUS|Thailand / U.S. Foreign Exchange Rate|Thai Baht to One U.S. Dollar
+DEXUSAL|U.S. / Australia Foreign Exchange Rate|U.S. Dollars to One Australian Dollar
+DEXUSEU|U.S. / Euro Foreign Exchange Rate|U.S. Dollars to One Euro
+DEXUSNZ|U.S. / New Zealand Foreign Exchange Rate|U.S. Dollars to One New Zealand Dollar
+DEXUSUK|U.S. / U.K. Foreign Exchange Rate|U.S. Dollars to One British Pound
+CPFF|3-Month Commercial Paper Minus Federal Funds Rate|Percent
+MEXINTDUSD|Mexican Intervention: Banco de Mexico Purchase on the USD|Millions of USD
+BAMLEM1BRRAAA2ACRPITRIV|ICE BofAML AAA-A Emerging Markets Corporate Plus Sub-Index Total Return Index Value|Index
+BAMLEM1RAAA2ALCRPIUSTRIV|ICE BofAML AAA-A US Emerging Markets Liquid Corporate Plus Sub-Index Total Return Index Value|Index
+BAMLEMRACRPIASIATRIV|ICE BofAML Asia Emerging Markets Corporate Plus Sub-Index Total Return Index Value|Index
+BAMLEMALLCRPIASIAUSTRIV|ICE BofAML Asia US Emerging Markets Liquid Corporate Plus Sub-Index Total Return Index Value|Index
+BAMLEM4BRRBLCRPITRIV|ICE BofAML B and Lower Emerging Markets Corporate Plus Sub-Index Total Return Index Value|Index
+BAMLEM4RBLLCRPIUSTRIV|ICE BofAML B and Lower US Emerging Markets Liquid Corporate Plus Sub-Index Total Return Index Value|Index
+BAMLEM3BRRBBCRPITRIV|ICE BofAML BB Emerging Markets Corporate Plus Sub-Index Total Return Index Value|Index
+BAMLEM3RBBLCRPIUSTRIV|ICE BofAML BB US Emerging Markets Liquid Corporate Plus Sub-Index Total Return Index Value|Index
+BAMLEM2BRRBBBCRPITRIV|ICE BofAML BBB Emerging Markets Corporate Plus Sub-Index Total Return Index Value|Index
+BAMLEM2RBBBLCRPIUSTRIV|ICE BofAML BBB US Emerging Markets Liquid Corporate Plus Sub-Index Total Return Index Value|Index
+BAMLEM5BCOCRPITRIV|ICE BofAML Crossover Emerging Markets Corporate Plus Sub-Index Total Return Index Value|Index
+BAMLEMXOCOLCRPIUSTRIV|ICE BofAML Crossover US Emerging Markets Liquid Corporate Plus Sub-Index Total Return Index Value|Index
+BAMLEMCBPITRIV|ICE BofAML Emerging Markets Corporate Plus Index Total Return Index Value|Index
+BAMLEMEBCRPIETRIV|ICE BofAML Euro Emerging Markets Corporate Plus Sub-Index Total Return Index Value|Index
+BAMLEMRECRPIEMEATRIV|ICE BofAML Europe, the Middle East, and Africa (EMEA) Emerging Markets Corporate Plus Sub-Index Total Return Index Value|Index
+BAMLEMELLCRPIEMEAUSTRIV|ICE BofAML Europe, the Middle East, and Africa (EMEA) US Emerging Markets Liquid Corporate Plus Sub-Index Total Return Index Value|Index
+BAMLEMFSFCRPITRIV|ICE BofAML Financial Emerging Markets Corporate Plus Sub-Index Total Return Index Value|Index
+BAMLEMFLFLCRPIUSTRIV|ICE BofAML Financial US Emerging Markets Liquid Corporate Plus Sub-Index Total Return Index Value|Index
+BAMLEMIBHGCRPITRIV|ICE BofAML High Grade Emerging Markets Corporate Plus Sub-Index Total Return Index Value|Index
+BAMLEMHGHGLCRPIUSTRIV|ICE BofAML High Grade US Emerging Markets Liquid Corporate Plus Sub-Index Total Return Index Value|Index
+BAMLEMHBHYCRPITRIV|ICE BofAML High Yield Emerging Markets Corporate Plus Sub-Index Total Return Index Value|Index
+BAMLEMHYHYLCRPIUSTRIV|ICE BofAML High Yield US Emerging Markets Liquid Corporate Plus Sub-Index Total Return Index Value|Index
+BAMLEMRLCRPILATRIV|ICE BofAML Latin America Emerging Markets Corporate Plus Sub-Index Total Return Index Value|Index
+BAMLEMLLLCRPILAUSTRIV|ICE BofAML Latin America US Emerging Markets Liquid Corporate Plus Sub-Index Total Return Index Value|Index
+BAMLEMNSNFCRPITRIV|ICE BofAML Non-Financial Emerging Markets Corporate Plus Sub-Index Total Return Index Value|Index
+BAMLEMNFNFLCRPIUSTRIV|ICE BofAML Non-Financial US Emerging Markets Liquid Corporate Plus Sub-Index Total Return Index Value|Index
+BAMLC0A0CM|ICE BofAML US Corporate Master Option-Adjusted Spread|Percent
+BAMLH0A0HYM2|ICE BofAML US High Yield Master II Option-Adjusted Spread|Percent
+BAMLC1A0C13Y|ICE BofAML US Corporate 1-3 Year Option-Adjusted Spread|Percent
+BAMLC7A0C1015Y|ICE BofAML US Corporate 10-15 Year Option-Adjusted Spread|Percent
+BAMLC8A0C15PY|ICE BofAML US Corporate 15+ Year Option-Adjusted Spread|Percent
+BAMLC2A0C35Y|ICE BofAML US Corporate 3-5 Year Option-Adjusted Spread|Percent
+BAMLC3A0C57Y|ICE BofAML US Corporate 5-7 Year Option-Adjusted Spread|Percent
+BAMLC4A0C710Y|ICE BofAML US Corporate 7-10 Year Option-Adjusted Spread|Percent
+BAMLEMPUPUBSLCRPIUSTRIV|ICE BofAML Public Sector Issuers US Emerging Markets Liquid Corporate Plus Sub-Index Total Return Index Value|Index
+BAMLEMUBCRPIUSTRIV|ICE BofAML US Emerging Markets Corporate Plus Sub-Index Total Return Index Value|Index
+BAMLEMCLLCRPIUSTRIV|ICE BofAML US Emerging Markets Liquid Corporate Plus Index Total Return Index Value|Index
+DEXVZUS|Venezuela / U.S. Foreign Exchange Rate|Venezuelan Bolivares to One U.S. Dollar
+CHFONTD156N|Spot Next London Interbank Offered Rate (LIBOR), based on Swiss Franc|Percent
+JPYONTD156N|Spot Next London Interbank Offered Rate (LIBOR), based on Japanese Yen|Percent
+JPY6MTD156N|6-Month London Interbank Offered Rate (LIBOR), based on Japanese Yen|Percent
+JPY3MTD156N|3-Month London Interbank Offered Rate (LIBOR), based on Japanese Yen|Percent
+USD6MTD156N|6-Month London Interbank Offered Rate (LIBOR), based on U.S. Dollar|Percent
+JPY1MTD156N|1-Month London Interbank Offered Rate (LIBOR), based on Japanese Yen|Percent
+JPY12MD156N|12-Month London Interbank Offered Rate (LIBOR), based on Japanese Yen|Percent
+GBP12MD156N|12-Month London Interbank Offered Rate (LIBOR), based on British Pound|Percent
+GBP1MTD156N|1-Month London Interbank Offered Rate (LIBOR), based on British Pound|Percent
+GBP1WKD156N|1-Week London Interbank Offered Rate (LIBOR), based on British Pound|Percent
+GBP2MTD156N|2-Month London Interbank Offered Rate (LIBOR), based on British Pound|Percent
+GBP3MTD156N|3-Month London Interbank Offered Rate (LIBOR), based on British Pound|Percent
+JPY1WKD156N|1-Week London Interbank Offered Rate (LIBOR), based on Japanese Yen|Percent
+JPY2MTD156N|2-Month London Interbank Offered Rate (LIBOR), based on Japanese Yen|Percent
+CHF6MTD156N|6-Month London Interbank Offered Rate (LIBOR), based on Swiss Franc|Percent
+CHF3MTD156N|3-Month London Interbank Offered Rate (LIBOR), based on Swiss Franc|Percent
+USD1MTD156N|1-Month London Interbank Offered Rate (LIBOR), based on U.S. Dollar|Percent
+CHF12MD156N|12-Month London Interbank Offered Rate (LIBOR), based on Swiss Franc|Percent
+USD12MD156N|12-Month London Interbank Offered Rate (LIBOR), based on U.S. Dollar|Percent
+CHF1MTD156N|1-Month London Interbank Offered Rate (LIBOR), based on Swiss Franc|Percent
+CHF1WKD156N|1-Week London Interbank Offered Rate (LIBOR), based on Swiss Franc|Percent
+CHF2MTD156N|2-Month London Interbank Offered Rate (LIBOR), based on Swiss Franc|Percent
+EUR12MD156N|12-Month London Interbank Offered Rate (LIBOR), based on Euro|Percent
+GBP6MTD156N|6-Month London Interbank Offered Rate (LIBOR), based on British Pound|Percent
+EUR1MTD156N|1-Month London Interbank Offered Rate (LIBOR), based on Euro|Percent
+EUR2MTD156N|2-Month London Interbank Offered Rate (LIBOR), based on Euro|Percent
+EUR3MTD156N|3-Month London Interbank Offered Rate (LIBOR), based on Euro|Percent
+EUR6MTD156N|6-Month London Interbank Offered Rate (LIBOR), based on Euro|Percent
+EURONTD156N|Overnight London Interbank Offered Rate (LIBOR), based on Euro|Percent
+USD1WKD156N|1-Week London Interbank Offered Rate (LIBOR), based on U.S. Dollar|Percent
+USD2MTD156N|2-Month London Interbank Offered Rate (LIBOR), based on U.S. Dollar|Percent
+USD3MTD156N|3-Month London Interbank Offered Rate (LIBOR), based on U.S. Dollar|Percent
+USDONTD156N|Overnight London Interbank Offered Rate (LIBOR), based on U.S. Dollar|Percent
+EUR1WKD156N|1-Week London Interbank Offered Rate (LIBOR), based on Euro|Percent
+GBPONTD156N|Overnight London Interbank Offered Rate (LIBOR), based on British Pound|Percent
+WILLSMLCAPVALPR|Wilshire US Small-Cap Value Price Index|Index
+WILL2500PR|Wilshire 2500 Price Index|Index
+WILL4500PR|Wilshire 4500 Price Index|Index
+WILL2500PRVAL|Wilshire 2500 Value Price Index|Index
+WILL2500PRGR|Wilshire 2500 Growth Price Index|Index
+WILLSMLCAPPR|Wilshire US Small-Cap Price Index|Index
+WILL5000PR|Wilshire 5000 Price Index|Index
+WILLSMLCAPGRPR|Wilshire US Small-Cap Growth Price Index|Index
+WILLMIDCAPVALPR|Wilshire US Mid-Cap Value Price Index|Index
+WILLRESIPR|Wilshire US Real Estate Securities Price Index (Wilshire US RESI)|Index
+WILLLRGCAPPR|Wilshire US Large-Cap Price Index|Index
+WILLMIDCAPPR|Wilshire US Mid-Cap Price Index|Index
+WILLMIDCAPGRPR|Wilshire US Mid-Cap Growth Price Index|Index
+WILLMICROCAPPR|Wilshire US Micro-Cap Price Index|Index
+WILLREITPR|Wilshire US Real Estate Investment Trust Price Index (Wilshire US REIT)|Index
+WILLLRGCAPVALPR|Wilshire US Large-Cap Value Price Index|Index
+WILLLRGCAPGRPR|Wilshire US Large-Cap Growth Price Index|Index
+WILL5000PRFC|Wilshire 5000 Full Cap Price Index|Index
+WILLMIDCAPVAL|Wilshire US Mid-Cap Value Total Market Index|Index
+WILLMIDCAPGR|Wilshire US Mid-Cap Growth Total Market Index|Index
+WILLMIDCAP|Wilshire US Mid-Cap Total Market Index|Index
+WILLRESIND|Wilshire US Real Estate Securities Total Market Index (Wilshire US RESI)|Index
+WILL4500IND|Wilshire 4500 Total Market Index|Index
+WILL5000IND|Wilshire 5000 Total Market Index|Index
+WILLLRGCAPGR|Wilshire US Large-Cap Growth Total Market Index|Index
+WILLMICROCAP|Wilshire US Micro-Cap Total Market Index|Index
+WILL2500INDVAL|Wilshire 2500 Value Total Market Index|Index
+WILLSMLCAPGR|Wilshire US Small-Cap Growth Total Market Index|Index
+WILLSMLCAPVAL|Wilshire US Small-Cap Value Total Market Index|Index
+WILLLRGCAPVAL|Wilshire US Large-Cap Value Total Market Index|Index
+WILLREITIND|Wilshire US Real Estate Investment Trust Total Market Index (Wilshire US REIT)|Index
+WILL2500IND|Wilshire 2500 Total Market Index|Index
+WILLSMLCAP|Wilshire US Small-Cap Total Market Index|Index
+WILLLRGCAP|Wilshire US Large-Cap Total Market Index|Index
+WILL2500INDGR|Wilshire 2500 Growth Total Market Index|Index
+WILL5000INDFC|Wilshire 5000 Total Market Full Cap Index|Index
+BAMLHE00EHYITRIV|ICE BofAML Euro High Yield Index Total Return Index Value|Index
+BAMLCC1A013YTRIV|ICE BofAML US Corp 1-3yr Total Return Index Value|Index
+BAMLCC7A01015YTRIV|ICE BofAML US Corp 10-15yr Total Return Index Value|Index
+BAMLCC8A015PYTRIV|ICE BofAML US Corp 15+yr Total Return Index Value|Index
+BAMLCC2A035YTRIV|ICE BofAML US Corp 3-5yr Total Return Index Value|Index
+BAMLCC3A057YTRIV|ICE BofAML US Corp 5-7yr Total Return Index Value|Index
+BAMLCC4A0710YTRIV|ICE BofAML US Corporate 7-10yr Total Return Index Value|Index
+BAMLCC0A3ATRIV|ICE BofAML US Corp A Total Return Index Value|Index
+BAMLCC0A2AATRIV|ICE BofAML US Corp AA Total Return Index Value|Index
+BAMLCC0A1AAATRIV|ICE BofAML US Corp AAA Total Return Index Value|Index
+BAMLHYH0A2BTRIV|ICE BofAML US High Yield B Total Return Index Value|Index
+BAMLHYH0A1BBTRIV|ICE BofAML US High Yield BB Total Return Index Value|Index
+BAMLCC0A4BBBTRIV|ICE BofAML US Corp BBB Total Return Index Value|Index
+BAMLHYH0A3CMTRIV|ICE BofAML US High Yield CCC or Below Total Return Index Value|Index
+BAMLCC0A0CMTRIV|ICE BofAML US Corp Master Total Return Index Value|Index
+BAMLHYH0A0HYM2TRIV|ICE BofAML US High Yield Master II Total Return Index Value|Index
+BAMLEM1BRRAAA2ACRPIOAS|ICE BofAML AAA-A Emerging Markets Corporate Plus Sub-Index Option-Adjusted Spread|Percent
+BAMLEM1RAAA2ALCRPIUSOAS|ICE BofAML AAA-A US Emerging Markets Liquid Corporate Plus Sub-Index Option-Adjusted Spread|Percent
+BAMLEMRACRPIASIAOAS|ICE BofAML Asia Emerging Markets Corporate Plus Sub-Index Option-Adjusted Spread|Percent
+BAMLEMALLCRPIASIAUSOAS|ICE BofAML Asia US Emerging Markets Liquid Corporate Plus Sub-Index Option-Adjusted Spread|Percent
+BAMLEM4BRRBLCRPIOAS|ICE BofAML B and Lower Emerging Markets Corporate Plus Sub-Index Option-Adjusted Spread|Percent
+BAMLEM4RBLLCRPIUSOAS|ICE BofAML B and Lower US Emerging Markets Liquid Corporate Plus Sub-Index Option-Adjusted Spread|Percent
+BAMLEM3BRRBBCRPIOAS|ICE BofAML BB Emerging Markets Corporate Plus Sub-Index Option-Adjusted Spread|Percent
+BAMLEM3RBBLCRPIUSOAS|ICE BofAML BB US Emerging Markets Liquid Corporate Plus Sub-Index Option-Adjusted Spread|Percent
+BAMLEM2BRRBBBCRPIOAS|ICE BofAML BBB Emerging Markets Corporate Plus Sub-Index Option-Adjusted Spread|Percent
+BAMLEM2RBBBLCRPIUSOAS|ICE BofAML BBB US Emerging Markets Liquid Corporate Plus Sub-Index Option-Adjusted Spread|Percent
+BAMLEM5BCOCRPIOAS|ICE BofAML Crossover Emerging Markets Corporate Plus Sub-Index Option-Adjusted Spread|Percent
+BAMLEMXOCOLCRPIUSOAS|ICE BofAML Crossover US Emerging Markets Liquid Corporate Plus Sub-Index Option-Adjusted Spread|Percent
+BAMLEMCBPIOAS|ICE BofAML Emerging Markets Corporate Plus Index Option-Adjusted Spread|Percent
+BAMLEMEBCRPIEOAS|ICE BofAML Euro Emerging Markets Corporate Plus Sub-Index Option-Adjusted Spread|Percent
+BAMLEMRECRPIEMEAOAS|ICE BofAML Europe, the Middle East, and Africa (EMEA) Emerging Markets Corporate Plus Sub-Index Option-Adjusted Spread|Percent
+BAMLEMELLCRPIEMEAUSOAS|ICE BofAML Europe, the Middle East, and Africa (EMEA) US Emerging Markets Liquid Corporate Plus Sub-Index Option-Adjusted Spread|Percent
+BAMLEMFSFCRPIOAS|ICE BofAML Financial Emerging Markets Corporate Plus Sub-Index Option-Adjusted Spread|Percent
+BAMLEMFLFLCRPIUSOAS|ICE BofAML Financial US Emerging Markets Liquid Corporate Plus Sub-Index Option-Adjusted Spread|Percent
+BAMLEMIBHGCRPIOAS|ICE BofAML High Grade Emerging Markets Corporate Plus Sub-Index Option-Adjusted Spread|Percent
+BAMLEMHGHGLCRPIUSOAS|ICE BofAML High Grade US Emerging Markets Liquid Corporate Plus Sub-Index Option-Adjusted Spread|Percent
+BAMLEMHBHYCRPIOAS|ICE BofAML High Yield Emerging Markets Corporate Plus Sub-Index Option-Adjusted Spread|Percent
+BAMLEMHYHYLCRPIUSOAS|ICE BofAML High Yield US Emerging Markets Liquid Corporate Plus Sub-Index Option-Adjusted Spread|Percent
+BAMLEMRLCRPILAOAS|ICE BofAML Latin America Emerging Markets Corporate Plus Sub-Index Option-Adjusted Spread|Percent
+BAMLEMLLLCRPILAUSOAS|ICE BofAML Latin America US Emerging Markets Liquid Corporate Plus Sub-Index Option-Adjusted Spread|Percent
+BAMLEMNSNFCRPIOAS|ICE BofAML Non-Financial Emerging Markets Corporate Plus Sub-Index Option-Adjusted Spread|Percent
+BAMLEMNFNFLCRPIUSOAS|ICE BofAML Non-Financial US Emerging Markets Liquid Corporate Plus Sub-Index Option-Adjusted Spread|Percent
+BAMLEMPUPUBSLCRPIUSOAS|ICE BofAML Public Sector Issuers US Emerging Markets Liquid Corporate Plus Sub-Index Option-Adjusted Spread|Percent
+BAMLEMUBCRPIUSOAS|ICE BofAML US Emerging Markets Corporate Plus Sub-Index Option-Adjusted Spread|Percent
+BAMLEMCLLCRPIUSOAS|ICE BofAML US Emerging Markets Liquid Corporate Plus Index Option-Adjusted Spread|Percent
+BAMLHE00EHYIOAS|ICE BofAML Euro High Yield Index Option-Adjusted Spread|Percent
+BAMLC0A3CA|ICE BofAML US Corporate A Option-Adjusted Spread|Percent
+BAMLC0A2CAA|ICE BofAML US Corporate AA Option-Adjusted Spread|Percent
+BAMLC0A1CAAA|ICE BofAML US Corporate AAA Option-Adjusted Spread|Percent
+BAMLH0A2HYB|ICE BofAML US High Yield B Option-Adjusted Spread|Percent
+BAMLH0A1HYBB|ICE BofAML US High Yield BB Option-Adjusted Spread|Percent
+BAMLC0A4CBBB|ICE BofAML US Corporate BBB Option-Adjusted Spread|Percent
+BAMLH0A3HYC|ICE BofAML US High Yield CCC or Below Option-Adjusted Spread|Percent
+BAMLEM1BRRAAA2ACRPIEY|ICE BofAML AAA-A Emerging Markets Corporate Plus Sub-Index Effective Yield|Percent
+BAMLEM1RAAA2ALCRPIUSEY|ICE BofAML AAA-A US Emerging Markets Liquid Corporate Plus Sub-Index Effective Yield|Percent
+BAMLEMRACRPIASIAEY|ICE BofAML Asia Emerging Markets Corporate Plus Sub-Index Effective Yield|Percent
+BAMLEMALLCRPIASIAUSEY|ICE BofAML Asia US Emerging Markets Liquid Corporate Plus Sub-Index Effective Yield|Percent
+BAMLEM4BRRBLCRPIEY|ICE BofAML B and Lower Emerging Markets Corporate Plus Sub-Index Effective Yield|Percent
+BAMLEM4RBLLCRPIUSEY|ICE BofAML B and Lower US Emerging Markets Liquid Corporate Plus Sub-Index Effective Yield|Percent
+BAMLEM3BRRBBCRPIEY|ICE BofAML BB Emerging Markets Corporate Plus Sub-Index Effective Yield|Percent
+BAMLEM3RBBLCRPIUSEY|ICE BofAML BB US Emerging Markets Liquid Corporate Plus Sub-Index Effective Yield|Percent
+BAMLEM2BRRBBBCRPIEY|ICE BofAML BBB Emerging Markets Corporate Plus Sub-Index Effective Yield|Percent
+BAMLEM2RBBBLCRPIUSEY|ICE BofAML BBB US Emerging Markets Liquid Corporate Plus Sub-Index Effective Yield|Percent
+BAMLEM5BCOCRPIEY|ICE BofAML Crossover Emerging Markets Corporate Plus Sub-Index Effective Yield|Percent
+BAMLEMXOCOLCRPIUSEY|ICE BofAML Crossover US Emerging Markets Liquid Corporate Plus Sub-Index Effective Yield|Percent
+BAMLEMCBPIEY|ICE BofAML Emerging Markets Corporate Plus Index Effective Yield|Percent
+BAMLEMEBCRPIEEY|ICE BofAML Euro Emerging Markets Corporate Plus Sub-Index Effective Yield|Percent
+BAMLHE00EHYIEY|ICE BofAML Euro High Yield Index Effective Yield|Percent
+BAMLEMRECRPIEMEAEY|ICE BofAML Europe, the Middle East, and Africa (EMEA) Emerging Markets Corporate Plus Sub-Index Effective Yield|Percent
+BAMLEMELLCRPIEMEAUSEY|ICE BofAML Europe, the Middle East, and Africa (EMEA) US Emerging Markets Liquid Corporate Plus Sub-Index Effective Yield|Percent
+BAMLEMFSFCRPIEY|ICE BofAML Financial Emerging Markets Corporate Plus Sub-Index Effective Yield|Percent
+BAMLEMFLFLCRPIUSEY|ICE BofAML Financial US Emerging Markets Liquid Corporate Plus Sub-Index Effective Yield|Percent
+BAMLEMIBHGCRPIEY|ICE BofAML High Grade Emerging Markets Corporate Plus Sub-Index Effective Yield|Percent
+BAMLEMHGHGLCRPIUSEY|ICE BofAML High Grade US Emerging Markets Liquid Corporate Plus Sub-Index Effective Yield|Percent
+BAMLEMHBHYCRPIEY|ICE BofAML High Yield Emerging Markets Corporate Plus Sub-Index Effective Yield|Percent
+BAMLEMHYHYLCRPIUSEY|ICE BofAML High Yield US Emerging Markets Liquid Corporate Plus Sub-Index Effective Yield|Percent
+BAMLEMRLCRPILAEY|ICE BofAML Latin America Emerging Markets Corporate Plus Sub-Index Effective Yield|Percent
+BAMLEMLLLCRPILAUSEY|ICE BofAML Latin America US Emerging Markets Liquid Corporate Plus Sub-Index Effective Yield|Percent
+BAMLEMNSNFCRPIEY|ICE BofAML Non-Financial Emerging Markets Corporate Plus Sub-Index Effective Yield|Percent
+BAMLEMNFNFLCRPIUSEY|ICE BofAML Non-Financial US Emerging Markets Liquid Corporate Plus Sub-Index Effective Yield|Percent
+BAMLEMPUPUBSLCRPIUSEY|ICE BofAML Public Sector Issuers US Emerging Markets Liquid Corporate Plus Sub-Index Effective Yield|Percent
+BAMLC1A0C13YEY|ICE BofAML US Corporate 1-3 Year Effective Yield|Percent
+BAMLC7A0C1015YEY|ICE BofAML US Corporate 10-15 Year Effective Yield|Percent
+BAMLC8A0C15PYEY|ICE BofAML US Corporate 15+ Year Effective Yield|Percent
+BAMLC2A0C35YEY|ICE BofAML US Corporate 3-5 Year Effective Yield|Percent
+BAMLC3A0C57YEY|ICE BofAML US Corporate 5-7 Year Effective Yield|Percent
+BAMLC4A0C710YEY|ICE BofAML US Corporate 7-10 Year Effective Yield|Percent
+BAMLC0A3CAEY|ICE BofAML US Corporate A Effective Yield|Percent
+BAMLC0A2CAAEY|ICE BofAML US Corporate AA Effective Yield|Percent
+BAMLC0A1CAAAEY|ICE BofAML US Corporate AAA Effective Yield|Percent
+BAMLH0A2HYBEY|ICE BofAML US High Yield B Effective Yield|Percent
+BAMLH0A1HYBBEY|ICE BofAML US High Yield BB Effective Yield|Percent
+BAMLC0A4CBBBEY|ICE BofAML US Corporate BBB Effective Yield|Percent
+BAMLH0A3HYCEY|ICE BofAML US High Yield CCC or Below Effective Yield|Percent
+BAMLC0A0CMEY|ICE BofAML US Corporate Master Effective Yield|Percent
+BAMLEMUBCRPIUSEY|ICE BofAML US Emerging Markets Corporate Plus Sub-Index Effective Yield|Percent
+BAMLEMCLLCRPIUSEY|ICE BofAML US Emerging Markets Liquid Corporate Plus Index Effective Yield|Percent
+BAMLH0A0HYM2EY|ICE BofAML US High Yield Master II Effective Yield|Percent
+BAMLEM1BRRAAA2ACRPISYTW|ICE BofAML AAA-A Emerging Markets Corporate Plus Sub-Index Semi-Annual Yield to Worst|Percent
+BAMLEM1RAAA2ALCRPIUSSYTW|ICE BofAML AAA-A US Emerging Markets Liquid Corporate Plus Sub-Index Semi-Annual Yield to Worst|Percent
+BAMLEMRACRPIASIASYTW|ICE BofAML Asia Emerging Markets Corporate Plus Sub-Index Semi-Annual Yield to Worst|Percent
+BAMLEMALLCRPIASIAUSSYTW|ICE BofAML Asia US Emerging Markets Liquid Corporate Plus Sub-Index Semi-Annual Yield to Worst|Percent
+BAMLEM4BRRBLCRPISYTW|ICE BofAML B and Lower Emerging Markets Corporate Plus Sub-Index Semi-Annual Yield to Worst|Percent
+BAMLEM4RBLLCRPIUSSYTW|ICE BofAML B and Lower US Emerging Markets Liquid Corporate Plus Sub-Index Semi-Annual Yield to Worst|Percent
+BAMLEM3BRRBBCRPISYTW|ICE BofAML BB Emerging Markets Corporate Plus Sub-Index Semi-Annual Yield to Worst|Percent
+BAMLEM3RBBLCRPIUSSYTW|ICE BofAML BB US Emerging Markets Liquid Corporate Plus Sub-Index Semi-Annual Yield to Worst|Percent
+BAMLEM2BRRBBBCRPISYTW|ICE BofAML BBB Emerging Markets Corporate Plus Sub-Index Semi-Annual Yield to Worst|Percent
+BAMLEM2RBBBLCRPIUSSYTW|ICE BofAML BBB US Emerging Markets Liquid Corporate Plus Sub-Index Semi-Annual Yield to Worst|Percent
+BAMLEM5BCOCRPISYTW|ICE BofAML Crossover Emerging Markets Corporate Plus Sub-Index Semi-Annual Yield to Worst|Percent
+BAMLEMXOCOLCRPIUSSYTW|ICE BofAML Crossover US Emerging Markets Liquid Corporate Plus Sub-Index Semi-Annual Yield to Worst|Percent
+BAMLEMCBPISYTW|ICE BofAML Emerging Markets Corporate Plus Index Semi-Annual Yield to Worst|Percent
+BAMLEMEBCRPIESYTW|ICE BofAML Euro Emerging Markets Corporate Plus Sub-Index Semi-Annual Yield to Worst|Percent
+BAMLHE00EHYISYTW|ICE BofAML Euro High Yield Index Semi-Annual Yield to Worst|Percent
+BAMLEMRECRPIEMEASYTW|ICE BofAML Europe, the Middle East, and Africa (EMEA) Emerging Markets Corporate Plus Sub-Index Semi-Annual Yield to Worst|Percent
+BAMLEMELLCRPIEMEAUSSYTW|ICE BofAML Europe, the Middle East, and Africa (EMEA) US Emerging Markets Liquid Corporate Plus Sub-Index Semi-Annual Yield to Worst|Percent
+BAMLEMFSFCRPISYTW|ICE BofAML Financial Emerging Markets Corporate Plus Sub-Index Semi-Annual Yield to Worst|Percent
+BAMLEMFLFLCRPIUSSYTW|ICE BofAML Financial US Emerging Markets Liquid Corporate Plus Sub-Index Semi-Annual Yield to Worst|Percent
+BAMLEMIBHGCRPISYTW|ICE BofAML High Grade Emerging Markets Corporate Plus Sub-Index Semi-Annual Yield to Worst|Percent
+BAMLEMHGHGLCRPIUSSYTW|ICE BofAML High Grade US Emerging Markets Liquid Corporate Plus Sub-Index Semi-Annual Yield to Worst|Percent
+BAMLEMHBHYCRPISYTW|ICE BofAML High Yield Emerging Markets Corporate Plus Sub-Index Semi-Annual Yield to Worst|Percent
+BAMLEMHYHYLCRPIUSSYTW|ICE BofAML High Yield US Emerging Markets Liquid Corporate Plus Sub-Index Semi-Annual Yield to Worst|Percent
+BAMLEMRLCRPILASYTW|ICE BofAML Latin America Emerging Markets Corporate Plus Sub-Index Semi-Annual Yield to Worst|Percent
+BAMLEMLLLCRPILAUSSYTW|ICE BofAML Latin America US Emerging Markets Liquid Corporate Plus Sub-Index Semi-Annual Yield to Worst|Percent
+BAMLEMNSNFCRPISYTW|ICE BofAML Non-Financial Emerging Markets Corporate Plus Sub-Index Semi-Annual Yield to Worst|Percent
+BAMLEMNFNFLCRPIUSSYTW|ICE BofAML Non-Financial US Emerging Markets Liquid Corporate Plus Sub-Index Semi-Annual Yield to Worst|Percent
+BAMLEMPTPRVICRPISYTW|ICE BofAML Private Sector Issuers Emerging Markets Corporate Plus Sub-Index Semi-Annual Yield to Worst|Percent
+BAMLEMPVPRIVSLCRPIUSSYTW|ICE BofAML Private Sector Issuers US Emerging Markets Liquid Corporate Plus Sub-Index Semi-Annual Yield to Worst|Percent
+BAMLEMPBPUBSICRPISYTW|ICE BofAML Public Sector Issuers Emerging Markets Corporate Plus Sub-Index Semi-Annual Yield to Worst|Percent
+BAMLEMPUPUBSLCRPIUSSYTW|ICE BofAML Public Sector Issuers US Emerging Markets Liquid Corporate Plus Sub-Index Semi-Annual Yield to Worst|Percent
+BAMLC1A0C13YSYTW|ICE BofAML US Corporate 1-3 Year Semi-Annual Yield to Worst|Percent
+BAMLC7A0C1015YSYTW|ICE BofAML US Corporate 10-15 Year Semi-Annual Yield to Worst|Percent
+BAMLC8A0C15PYSYTW|ICE BofAML US Corporate 15+ Year Semi-Annual Yield to Worst|Percent
+BAMLC2A0C35YSYTW|ICE BofAML US Corporate 3-5 Year Semi-Annual Yield to Worst|Percent
+BAMLC3A0C57YSYTW|ICE BofAML US Corporate 5-7 Year Semi-Annual Yield to Worst|Percent
+BAMLC4A0C710YSYTW|ICE BofAML US Corporate 7-10 Year Semi-Annual Yield to Worst|Percent
+BAMLC0A3CASYTW|ICE BofAML US Corporate A Semi-Annual Yield to Worst|Percent
+BAMLC0A2CAASYTW|ICE BofAML US Corporate AA Semi-Annual Yield to Worst|Percent
+BAMLC0A1CAAASYTW|ICE BofAML US Corporate AAA Semi-Annual Yield to Worst|Percent
+BAMLH0A2HYBSYTW|ICE BofAML US High Yield B Semi-Annual Yield to Worst|Percent
+BAMLH0A1HYBBSYTW|ICE BofAML US High Yield BB Semi-Annual Yield to Worst|Percent
+BAMLC0A4CBBBSYTW|ICE BofAML US Corporate BBB Semi-Annual Yield to Worst|Percent
+BAMLH0A3HYCSYTW|ICE BofAML US High Yield CCC or Below Semi-Annual Yield to Worst|Percent
+BAMLC0A0CMSYTW|ICE BofAML US Corporate Master Semi-Annual Yield to Worst|Percent
+BAMLEMUBCRPIUSSYTW|ICE BofAML US Emerging Markets Corporate Plus Sub-Index Semi-Annual Yield to Worst|Percent
+BAMLEMCLLCRPIUSSYTW|ICE BofAML US Emerging Markets Liquid Corporate Plus Index Semi-Annual Yield to Worst|Percent
+BAMLH0A0HYM2SYTW|ICE BofAML US High Yield Master II Semi-Annual Yield to Worst|Percent
+4BIGEURORECDM|OECD based Recession Indicators for Four Big European Countries from the Peak through the Trough|+1 or 0
+AUSRECDM|OECD based Recession Indicators for Australia from the Peak through the Trough|+1 or 0
+AUTRECDM|OECD based Recession Indicators for Austria from the Peak through the Trough|+1 or 0
+BELRECDM|OECD based Recession Indicators for Belgium from the Peak through the Trough|+1 or 0
+BRARECDM|OECD based Recession Indicators for Brazil from the Peak through the Trough|+1 or 0
+CANRECDM|OECD based Recession Indicators for Canada from the Peak through the Trough|+1 or 0
+CHERECDM|OECD based Recession Indicators for Switzerland from the Peak through the Trough|+1 or 0
+CHLRECDM|OECD based Recession Indicators for Chile from the Peak through the Trough|+1 or 0
+CHNRECDM|OECD based Recession Indicators for China from the Peak through the Trough|+1 or 0
+CZERECDM|OECD based Recession Indicators for the Czech Republic from the Peak through the Trough|+1 or 0
+DEURECDM|OECD based Recession Indicators for Germany from the Peak through the Trough|+1 or 0
+DNKRECDM|OECD based Recession Indicators for Denmark from the Peak through the Trough|+1 or 0
+ESPRECDM|OECD based Recession Indicators for Spain from the Peak through the Trough|+1 or 0
+ESTRECDM|OECD based Recession Indicators for Estonia from the Peak through the Trough|+1 or 0
+EURORECDM|OECD based Recession Indicators for Euro Area from the Peak through the Trough|+1 or 0
+FINRECDM|OECD based Recession Indicators for Finland from the Peak through the Trough|+1 or 0
+FRARECDM|OECD based Recession Indicators for France from the Peak through the Trough|+1 or 0
+GBRRECDM|OECD based Recession Indicators for the United Kingdom from the Peak through the Trough|+1 or 0
+GRCRECDM|OECD based Recession Indicators for Greece from the Peak through the Trough|+1 or 0
+HUNRECDM|OECD based Recession Indicators for Hungary from the Peak through the Trough|+1 or 0
+IDNRECDM|OECD based Recession Indicators for Indonesia from the Peak through the Trough|+1 or 0
+INDRECDM|OECD based Recession Indicators for India from the Peak through the Trough|+1 or 0
+IRLRECDM|OECD based Recession Indicators for Ireland from the Peak through the Trough|+1 or 0
+ISRRECDM|OECD based Recession Indicators for Israel from the Peak through the Trough|+1 or 0
+ITARECDM|OECD based Recession Indicators for Italy from the Peak through the Trough|+1 or 0
+JPNRECDM|OECD based Recession Indicators for Japan from the Peak through the Trough|+1 or 0
+KORRECDM|OECD based Recession Indicators for Korea from the Peak through the Trough|+1 or 0
+LUXRECDM|OECD based Recession Indicators for Luxembourg from the Peak through the Trough|+1 or 0
+MAJOR5ASIARECDM|OECD based Recession Indicators for Major 5 Asia from the Peak through the Trough|+1 or 0
+MEXRECDM|OECD based Recession Indicators for Mexico from the Peak through the Trough|+1 or 0
+MSCRECDM|OECD based Recession Indicators for Major Seven Countries from the Peak through the Trough|+1 or 0
+NAFTARECDM|OECD based Recession Indicators for NAFTA Area from the Peak through the Trough|+1 or 0
+NDLRECDM|OECD based Recession Indicators for Netherlands from the Peak through the Trough|+1 or 0
+NORRECDM|OECD based Recession Indicators for Norway from the Peak through the Trough|+1 or 0
+NZLRECDM|OECD based Recession Indicators for New Zealand from the Peak through the Trough|+1 or 0
+OECDEUROPERECDM|OECD based Recession Indicators for OECD Europe from the Peak through the Trough|+1 or 0
+OECDNMERECDM|OECD based Recession Indicators for OECD and Non-member Economies from the Peak through the Trough|+1 or 0
+OECDRECDM|OECD based Recession Indicators for the OECD Total Area from the Peak through the Trough|+1 or 0
+POLRECDM|OECD based Recession Indicators for Poland from the Peak through the Trough|+1 or 0
+PRTRECDM|OECD based Recession Indicators for Portugal from the Peak through the Trough|+1 or 0
+RUSRECDM|OECD based Recession Indicators for Russian Federation from the Peak through the Trough|+1 or 0
+SVKRECDM|OECD based Recession Indicators for the Slovak Republic from the Peak through the Trough|+1 or 0
+SVNRECDM|OECD based Recession Indicators for Slovenia from the Peak through the Trough|+1 or 0
+SWERECDM|OECD based Recession Indicators for Sweden from the Peak through the Trough|+1 or 0
+TURRECDM|OECD based Recession Indicators for Turkey from the Peak through the Trough|+1 or 0
+USARECDM|OECD based Recession Indicators for the United States from the Peak through the Trough|+1 or 0
+ZAFRECDM|OECD based Recession Indicators for South Africa from the Peak through the Trough|+1 or 0
+4BIGEURORECD|OECD based Recession Indicators for Four Big European Countries from the Period following the Peak through the Trough|+1 or 0
+AUSRECD|OECD based Recession Indicators for Australia from the Period following the Peak through the Trough|+1 or 0
+AUTRECD|OECD based Recession Indicators for Austria from the Period following the Peak through the Trough|+1 or 0
+BELRECD|OECD based Recession Indicators for Belgium from the Period following the Peak through the Trough|+1 or 0
+BRARECD|OECD based Recession Indicators for Brazil from the Period following the Peak through the Trough|+1 or 0
+CANRECD|OECD based Recession Indicators for Canada from the Period following the Peak through the Trough|+1 or 0
+CHERECD|OECD based Recession Indicators for Switzerland from the Period following the Peak through the Trough|+1 or 0
+CHLRECD|OECD based Recession Indicators for Chile from the Period following the Peak through the Trough|+1 or 0
+CHNRECD|OECD based Recession Indicators for China from the Period following the Peak through the Trough|+1 or 0
+CZERECD|OECD based Recession Indicators for the Czech Republic from the Period following the Peak through the Trough|+1 or 0
+DEURECD|OECD based Recession Indicators for Germany from the Period following the Peak through the Trough|+1 or 0
+DNKRECD|OECD based Recession Indicators for Denmark from the Period following the Peak through the Trough|+1 or 0
+ESPRECD|OECD based Recession Indicators for Spain from the Period following the Peak through the Trough|+1 or 0
+ESTRECD|OECD based Recession Indicators for Estonia from the Period following the Peak through the Trough|+1 or 0
+EURORECD|OECD based Recession Indicators for Euro Area from the Period following the Peak through the Trough|+1 or 0
+FINRECD|OECD based Recession Indicators for Finland from the Period following the Peak through the Trough|+1 or 0
+FRARECD|OECD based Recession Indicators for France from the Period following the Peak through the Trough|+1 or 0
+GBRRECD|OECD based Recession Indicators for the United Kingdom from the Period following the Peak through the Trough|+1 or 0
+GRCRECD|OECD based Recession Indicators for Greece from the Period following the Peak through the Trough|+1 or 0
+HUNRECD|OECD based Recession Indicators for Hungary from the Period following the Peak through the Trough|+1 or 0
+IDNRECD|OECD based Recession Indicators for Indonesia from the Period following the Peak through the Trough|+1 or 0
+INDRECD|OECD based Recession Indicators for India from the Period following the Peak through the Trough|+1 or 0
+IRLRECD|OECD based Recession Indicators for Ireland from the Period following the Peak through the Trough|+1 or 0
+ISRRECD|OECD based Recession Indicators for Israel from the Period following the Peak through the Trough|+1 or 0
+ITARECD|OECD based Recession Indicators for Italy from the Period following the Peak through the Trough|+1 or 0
+JPNRECD|OECD based Recession Indicators for Japan from the Period following the Peak through the Trough|+1 or 0
+KORRECD|OECD based Recession Indicators for Korea from the Period following the Peak through the Trough|+1 or 0
+LUXRECD|OECD based Recession Indicators for Luxembourg from the Period following the Peak through the Trough|+1 or 0
+MAJOR5ASIARECD|OECD based Recession Indicators for Major 5 Asia from the Period following the Peak through the Trough|+1 or 0
+MEXRECD|OECD based Recession Indicators for Mexico from the Period following the Peak through the Trough|+1 or 0
+MSCRECD|OECD based Recession Indicators for Major Seven Countries from the Period following the Peak through the Trough|+1 or 0
+NAFTARECD|OECD based Recession Indicators for NAFTA Area from the Period following the Peak through the Trough|+1 or 0
+NDLRECD|OECD based Recession Indicators for Netherlands from the Period following the Peak through the Trough|+1 or 0
+NORRECD|OECD based Recession Indicators for Norway from the Period following the Peak through the Trough|+1 or 0
+NZLRECD|OECD based Recession Indicators for New Zealand from the Period following the Peak through the Trough|+1 or 0
+OECDEUROPERECD|OECD based Recession Indicators for OECD Europe from the Period following the Peak through the Trough|+1 or 0
+OECDNMERECD|OECD based Recession Indicators for OECD and Non-member Economies from the Period following the Peak through the Trough|+1 or 0
+OECDRECD|OECD based Recession Indicators for the OECD Total Area from the Period following the Peak through the Trough|+1 or 0
+POLRECD|OECD based Recession Indicators for Poland from the Period following the Peak through the Trough|+1 or 0
+PRTRECD|OECD based Recession Indicators for Portugal from the Period following the Peak through the Trough|+1 or 0
+RUSRECD|OECD based Recession Indicators for Russian Federation from the Period following the Peak through the Trough|+1 or 0
+SVKRECD|OECD based Recession Indicators for the Slovak Republic from the Period following the Peak through the Trough|+1 or 0
+SVNRECD|OECD based Recession Indicators for Slovenia from the Period following the Peak through the Trough|+1 or 0
+SWERECD|OECD based Recession Indicators for Sweden from the Period following the Peak through the Trough|+1 or 0
+TURRECD|OECD based Recession Indicators for Turkey from the Period following the Peak through the Trough|+1 or 0
+USARECD|OECD based Recession Indicators for the United States from the Period following the Peak through the Trough|+1 or 0
+ZAFRECD|OECD based Recession Indicators for South Africa from the Period following the Peak through the Trough|+1 or 0
+4BIGEURORECDP|OECD based Recession Indicators for Four Big European Countries from the Peak through the Period preceding the Trough|+1 or 0
+AUSRECDP|OECD based Recession Indicators for Australia from the Peak through the Period preceding the Trough|+1 or 0
+AUTRECDP|OECD based Recession Indicators for Austria from the Peak through the Period preceding the Trough|+1 or 0
+BELRECDP|OECD based Recession Indicators for Belgium from the Peak through the Period preceding the Trough|+1 or 0
+BRARECDP|OECD based Recession Indicators for Brazil from the Peak through the Period preceding the Trough|+1 or 0
+CANRECDP|OECD based Recession Indicators for Canada from the Peak through the Period preceding the Trough|+1 or 0
+CHERECDP|OECD based Recession Indicators for Switzerland from the Peak through the Period preceding the Trough|+1 or 0
+CHLRECDP|OECD based Recession Indicators for Chile from the Peak through the Period preceding the Trough|+1 or 0
+CHNRECDP|OECD based Recession Indicators for China from the Peak through the Period preceding the Trough|+1 or 0
+CZERECDP|OECD based Recession Indicators for the Czech Republic from the Peak through the Period preceding the Trough|+1 or 0
+DEURECDP|OECD based Recession Indicators for Germany from the Peak through the Period preceding the Trough|+1 or 0
+DNKRECDP|OECD based Recession Indicators for Denmark from the Peak through the Period preceding the Trough|+1 or 0
+ESPRECDP|OECD based Recession Indicators for Spain from the Peak through the Period preceding the Trough|+1 or 0
+ESTRECDP|OECD based Recession Indicators for Estonia from the Peak through the Period preceding the Trough|+1 or 0
+EURORECDP|OECD based Recession Indicators for Euro Area from the Peak through the Period preceding the Trough|+1 or 0
+FINRECDP|OECD based Recession Indicators for Finland from the Peak through the Period preceding the Trough|+1 or 0
+FRARECDP|OECD based Recession Indicators for France from the Peak through the Period preceding the Trough|+1 or 0
+GBRRECDP|OECD based Recession Indicators for the United Kingdom from the Peak through the Period preceding the Trough|+1 or 0
+GRCRECDP|OECD based Recession Indicators for Greece from the Peak through the Period preceding the Trough|+1 or 0
+HUNRECDP|OECD based Recession Indicators for Hungary from the Peak through the Period preceding the Trough|+1 or 0
+IDNRECDP|OECD based Recession Indicators for Indonesia from the Peak through the Period preceding the Trough|+1 or 0
+INDRECDP|OECD based Recession Indicators for India from the Peak through the Period preceding the Trough|+1 or 0
+IRLRECDP|OECD based Recession Indicators for Ireland from the Peak through the Period preceding the Trough|+1 or 0
+ISRRECDP|OECD based Recession Indicators for Israel from the Peak through the Period preceding the Trough|+1 or 0
+ITARECDP|OECD based Recession Indicators for Italy from the Peak through the Period preceding the Trough|+1 or 0
+JPNRECDP|OECD based Recession Indicators for Japan from the Peak through the Period preceding the Trough|+1 or 0
+KORRECDP|OECD based Recession Indicators for Korea from the Peak through the Period preceding the Trough|+1 or 0
+LUXRECDP|OECD based Recession Indicators for Luxembourg from the Peak through the Period preceding the Trough|+1 or 0
+MAJOR5ASIARECDP|OECD based Recession Indicators for Major 5 Asia from the Peak through the Period preceding the Trough|+1 or 0
+MEXRECDP|OECD based Recession Indicators for Mexico from the Peak through the Period preceding the Trough|+1 or 0
+MSCRECDP|OECD based Recession Indicators for Major Seven Countries from the Peak through the Period preceding the Trough|+1 or 0
+NAFTARECDP|OECD based Recession Indicators for NAFTA Area from the Peak through the Period preceding the Trough|+1 or 0
+NDLRECDP|OECD based Recession Indicators for Netherlands from the Peak through the Period preceding the Trough|+1 or 0
+NORRECDP|OECD based Recession Indicators for Norway from the Peak through the Period preceding the Trough|+1 or 0
+NZLRECDP|OECD based Recession Indicators for New Zealand from the Peak through the Period preceding the Trough|+1 or 0
+OECDEUROPERECDP|OECD based Recession Indicators for OECD Europe from the Peak through the Period preceding the Trough|+1 or 0
+OECDNMERECDP|OECD based Recession Indicators for OECD and Non-member Economies from the Peak through the Period preceding the Trough|+1 or 0
+OECDRECDP|OECD based Recession Indicators for the OECD Total Area from the Peak through the Period preceding the Trough|+1 or 0
+POLRECDP|OECD based Recession Indicators for Poland from the Peak through the Period preceding the Trough|+1 or 0
+PRTRECDP|OECD based Recession Indicators for Portugal from the Peak through the Period preceding the Trough|+1 or 0
+RUSRECDP|OECD based Recession Indicators for Russian Federation from the Peak through the Period preceding the Trough|+1 or 0
+SVKRECDP|OECD based Recession Indicators for the Slovak Republic from the Peak through the Period preceding the Trough|+1 or 0
+SVNRECDP|OECD based Recession Indicators for Slovenia from the Peak through the Period preceding the Trough|+1 or 0
+SWERECDP|OECD based Recession Indicators for Sweden from the Peak through the Period preceding the Trough|+1 or 0
+TURRECDP|OECD based Recession Indicators for Turkey from the Peak through the Period preceding the Trough|+1 or 0
+USARECDP|OECD based Recession Indicators for the United States from the Peak through the Period preceding the Trough|+1 or 0
+ZAFRECDP|OECD based Recession Indicators for South Africa from the Peak through the Period preceding the Trough|+1 or 0
+VIXCLS|CBOE Volatility Index: VIX|Index
+DTWEXAFEGS|Trade Weighted U.S. Dollar Index: Advanced Foreign Economies, Goods and Services|Index Jan 2006=100
+DTWEXBGS|Trade Weighted U.S. Dollar Index: Broad, Goods and Services|Index Jan 2006=100
+DTWEXEMEGS|Trade Weighted U.S. Dollar Index: Emerging Markets Economies, Goods and Services|Index Jan 2006=100
