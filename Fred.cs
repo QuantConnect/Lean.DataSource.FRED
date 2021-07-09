@@ -24,6 +24,11 @@ namespace QuantConnect.DataSource
     public partial class Fred : BaseData
     {
         /// <summary>
+        /// Data source ID
+        /// </summary>
+        public static int DataSourceId { get; } = 2010;
+
+        /// <summary>
         /// Return the URL string source of the file. This will be converted to a stream
         /// </summary>
         /// <param name="config">Configuration object</param>

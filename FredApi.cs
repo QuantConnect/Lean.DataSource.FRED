@@ -26,6 +26,11 @@ namespace QuantConnect.DataSource
 #pragma warning disable 1591
     public class FredApi : BaseData
     {
+        /// <summary>
+        /// Data source ID
+        /// </summary>
+        public static int DataSourceId { get; } = 2011;
+
         [JsonProperty("realtime_start")]
         public string RealtimeStart { get; set; }
 
