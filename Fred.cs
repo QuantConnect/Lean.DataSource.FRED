@@ -17,16 +17,28 @@
 using QuantConnect.Data;
 using System;
 using System.Collections.Generic;
-using System.IO;
+using Newtonsoft.Json;
+using System.Linq;
 
 namespace QuantConnect.DataSource
 {
     public partial class Fred : BaseData
     {
+        private static string _apiKey = "";
+
         /// <summary>
         /// Data source ID
         /// </summary>
         public static int DataSourceId { get; } = 2010;
+
+        /// <summary>
+        /// Flag indicating whether or not the FRED API key has been set yet
+        /// </summary>
+        public static bool IsAPIKeySet
+        {
+            get;
+            private set;
+        }
 
         /// <summary>
         /// Return the URL string source of the file. This will be converted to a stream
@@ -39,13 +51,8 @@ namespace QuantConnect.DataSource
         /// </returns>
         public override SubscriptionDataSource GetSource(SubscriptionDataConfig config, DateTime date, bool isLiveMode)
         {
-            var localFilePath = Path.Combine(
-                Globals.DataFolder,
-                "alternative",
-                "fred",
-                $"{config.Symbol.Value.ToLowerInvariant()}.csv");
-
-            return new SubscriptionDataSource(localFilePath, SubscriptionTransportMedium.LocalFile);
+            var source = $"https://api.stlouisfed.org/fred/series/observations?file_type=json&observation_start=1998-01-01&api_key={_apiKey}&series_id={config.Symbol.Value.ToLowerInvariant()}";
+            return new SubscriptionDataSource(source, SubscriptionTransportMedium.Rest);
         }
 
         /// <summary>
@@ -55,19 +62,32 @@ namespace QuantConnect.DataSource
         /// <param name="line">Line of data</param>
         /// <param name="date">Date</param>
         /// <param name="isLiveMode">Is live mode</param>
-        /// <returns>New instance of USEnergy</returns>
+        /// <returns>New instance of FRED data</returns>
         public override BaseData Reader(SubscriptionDataConfig config, string line, DateTime date, bool isLiveMode)
         {
-            var csv = line.Split(',');
+            var json = JsonConvert.DeserializeObject<DataResponse>(line);
 
-            var parsedDate = Parse.DateTimeExact(csv[0], "yyyyMMdd");
+            var requestedEntry = json.Observations.Where(x => x.Date == date.Date).Single();
+
             return new Fred
             {
                 Symbol = config.Symbol,
-                Value = Parse.Decimal(csv[1]),
-                Time = parsedDate,
-                EndTime = parsedDate + TimeSpan.FromDays(1)
+                Value = requestedEntry.Value,
+                Time = requestedEntry.Date,
+                EndTime = requestedEntry.Date + TimeSpan.FromDays(1)
             };
+        }
+
+        /// <summary>
+        /// Set the FRED API key to request the data.
+        /// </summary>
+        /// <param name="apiKey"></param>
+        public static void SetAPIKey(string apiKey)
+        {
+            if (string.IsNullOrWhiteSpace(apiKey)) return;
+
+            _apiKey = apiKey;
+            IsAPIKeySet = true;
         }
 
         /// <summary>
@@ -128,6 +148,33 @@ namespace QuantConnect.DataSource
         public override List<Resolution> SupportedResolutions()
         {
             return DailyResolution;
+        }
+
+        /// <summary>
+        /// Class containing part of the response from FRED API when requesting data for a symbol
+        /// </summary>
+        private class DataResponse
+        {
+            [JsonProperty(PropertyName = "observations")]
+            public List<DataEntry> Observations { get; set; }
+        }
+
+        /// <summary>
+        /// Class for wrapping each data entry in the response from FRED API when requesting data for a symbol
+        /// </summary>
+        private class DataEntry
+        {
+            [JsonProperty(PropertyName = "realtime_start")]
+            public DateTime RealTimeStart { get; set; }
+
+            [JsonProperty(PropertyName = "realtime_end")]
+            public DateTime RealTimeEnd { get; set;}
+
+            [JsonProperty(PropertyName = "date")]
+            public DateTime Date { get; set; }
+
+            [JsonProperty(PropertyName = "value")]
+            public decimal Value { get; set; }
         }
     }
 }
