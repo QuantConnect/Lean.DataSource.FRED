@@ -24,7 +24,7 @@ namespace QuantConnect.DataSource
 {
     public partial class Fred : BaseData
     {
-        private static string _apiKey = "";
+        private static string _authCode = "";
 
         /// <summary>
         /// Data source ID
@@ -32,9 +32,9 @@ namespace QuantConnect.DataSource
         public static int DataSourceId { get; } = 2010;
 
         /// <summary>
-        /// Flag indicating whether or not the FRED API key has been set yet
+        /// Flag indicating whether or not the FRED auth code has been set yet
         /// </summary>
-        public static bool IsAPIKeySet
+        public static bool IsAuthCodeSet
         {
             get;
             private set;
@@ -51,7 +51,7 @@ namespace QuantConnect.DataSource
         /// </returns>
         public override SubscriptionDataSource GetSource(SubscriptionDataConfig config, DateTime date, bool isLiveMode)
         {
-            var source = $"https://api.stlouisfed.org/fred/series/observations?file_type=json&observation_start=1998-01-01&api_key={_apiKey}&series_id={config.Symbol.Value.ToLowerInvariant()}";
+            var source = $"https://api.stlouisfed.org/fred/series/observations?file_type=json&observation_start=1998-01-01&api_key={_authCode}&series_id={config.Symbol.Value.ToLowerInvariant()}";
             return new SubscriptionDataSource(source, SubscriptionTransportMedium.Rest);
         }
 
@@ -65,29 +65,40 @@ namespace QuantConnect.DataSource
         /// <returns>New instance of FRED data</returns>
         public override BaseData Reader(SubscriptionDataConfig config, string line, DateTime date, bool isLiveMode)
         {
-            var json = JsonConvert.DeserializeObject<DataResponse>(line);
+            if (!IsAuthCodeSet)
+            {
+                throw new ArgumentNullException("The authentication code has not been set yet. " +
+                    "Please, set your FRED authentication code first, before requesting data.");
+            }
 
-            var requestedEntry = json.Observations.Where(x => x.Date == date.Date).Single();
+            var json = JsonConvert.DeserializeObject<FredApi>(line);
+
+            var requestedEntry = json.Observations.Where(x => x.Date == date.Date).SingleOrDefault();
+
+            if (requestedEntry == default || requestedEntry.Value == ".")
+            {
+                return null;
+            }
 
             return new Fred
             {
                 Symbol = config.Symbol,
-                Value = requestedEntry.Value,
+                Value = requestedEntry.Value.ToDecimal(),
                 Time = requestedEntry.Date,
                 EndTime = requestedEntry.Date + TimeSpan.FromDays(1)
             };
         }
 
         /// <summary>
-        /// Set the FRED API key to request the data.
+        /// Set the FRED authentication code to request the data.
         /// </summary>
-        /// <param name="apiKey"></param>
-        public static void SetAPIKey(string apiKey)
+        /// <param name="authCode"></param>
+        public static void SetAuthCode(string authCode)
         {
-            if (string.IsNullOrWhiteSpace(apiKey)) return;
+            if (string.IsNullOrWhiteSpace(authCode)) return;
 
-            _apiKey = apiKey;
-            IsAPIKeySet = true;
+            _authCode = authCode;
+            IsAuthCodeSet = true;
         }
 
         /// <summary>
@@ -148,33 +159,6 @@ namespace QuantConnect.DataSource
         public override List<Resolution> SupportedResolutions()
         {
             return DailyResolution;
-        }
-
-        /// <summary>
-        /// Class containing part of the response from FRED API when requesting data for a symbol
-        /// </summary>
-        private class DataResponse
-        {
-            [JsonProperty(PropertyName = "observations")]
-            public List<DataEntry> Observations { get; set; }
-        }
-
-        /// <summary>
-        /// Class for wrapping each data entry in the response from FRED API when requesting data for a symbol
-        /// </summary>
-        private class DataEntry
-        {
-            [JsonProperty(PropertyName = "realtime_start")]
-            public DateTime RealTimeStart { get; set; }
-
-            [JsonProperty(PropertyName = "realtime_end")]
-            public DateTime RealTimeEnd { get; set;}
-
-            [JsonProperty(PropertyName = "date")]
-            public DateTime Date { get; set; }
-
-            [JsonProperty(PropertyName = "value")]
-            public decimal Value { get; set; }
         }
     }
 }

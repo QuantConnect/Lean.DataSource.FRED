@@ -18,25 +18,32 @@ class Demonstration(QCAlgorithm):
         self.SetStartDate(2021, 1, 1)
         self.SetEndDate(2021, 7, 1)
 
-        self.AddEquity("SPY", Resolution.Daily)
-        self.fredSymbol = self.AddData(Fred, "JPINTDDMEJPY", Resolution.Daily).Symbol
+        tickers = ["JPINTDDMEJPY", "USINTDMRKTJPY", "TRINTDEXR", "DTWEXM", "CBETHUSD", "VXGOGCLS", "CHINTDCHFDM", "DCPN3M", "BAMLEMPTPRVICRPITRIV", "VXGDXCLS"]
+        self.symbols = {}
 
-        self.lastValue = -1;
-        history = self.History(Fred, self.fredSymbol, 10, Resolution.Daily)
-        self.Debug(f"We got {len(history)} items from our history request for JPINTDDMEJPY FRED data")
+        Fred.SetAuthCode("your_authentication_code")
+        self.AddEquity("SPY", Resolution.Daily)
+        for ticker in tickers:
+            self.symbols[ticker] = self.AddData(Fred, ticker, Resolution.Daily).Symbol
+            self.Debug(f"We got {len(self.History(Fred, self.symbols[ticker], 10, Resolution.Daily))} items from our history request for {ticker} FRED data")
+
+        self.greatestValue = -1;
 
     def OnData(self, data):
         data = data.Get(Fred)
 
         if len(data.Values) != 0:
-            self.Debug(str(data[self.fredSymbol]))
+            self.Debug(str(data))
 
-            if self.lastValue == -1 and data[self.fredSymbol].Value > self.lastValue:
+            symbolsWithData = len(data.Values)
+            greatestValue = max(list(map(lambda x: x.Value, data.Values)))
+
+            if symbolsWithData >= 5 and self.greatestValue != -1 and greatestValue > self.greatestValue:
                 self.SetHoldings("SPY", 1)
             else:
                 self.SetHoldings("SPY", -1)
 
-            _lastValue = data[self.fredSymbol].Value
+            self.greatestValue = greatestValue
 
     def OnOrderEvent(self, orderEvent):
         if orderEvent.Status == 3:

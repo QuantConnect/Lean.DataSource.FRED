@@ -20,24 +20,43 @@ using QuantConnect.Util;
 using QuantConnect.Orders;
 using QuantConnect.Algorithm;
 using QuantConnect.DataSource;
+using System.Collections.Generic;
 
 namespace QuantConnect.DataLibrary.Tests
 {
     public class Demonstration : QCAlgorithm
     {
-        private Symbol _fredSymbol;
-        private decimal? _lastValue = null;
+        private decimal? _greatestValue = null;
+        private List<string> _tickers = new()
+        {
+            "JPINTDDMEJPY",
+            "USINTDMRKTJPY",
+            "TRINTDEXR",
+            "DTWEXM",
+            "CBETHUSD",
+            "VXGOGCLS",
+            "CHINTDCHFDM",
+            "DCPN3M",
+            "BAMLEMPTPRVICRPITRIV",
+            "VXGDXCLS"
+        };
+
+        private Dictionary<string, Symbol> _symbols = new Dictionary<string, Symbol>();
 
         public override void Initialize()
         {
             SetStartDate(2021, 1, 1);  //Set Start Date
             SetEndDate(2021, 7, 1);    //Set End Date
             AddEquity("SPY", Resolution.Daily);
-            _fredSymbol = AddData<Fred>("JPINTDDMEJPY").Symbol;
 
-            // Historical data
-            var history = History<Fred>(_fredSymbol, 10, Resolution.Daily);
-            Debug($"We got {history.Count()} items from our history request for JPINTDDMEJPY FRED data");
+            Fred.SetAuthCode("your_authentication_code");
+            foreach (var ticker in _tickers)
+            {
+                _symbols[ticker] = AddData<Fred>(ticker).Symbol;
+
+                //Historical data
+                Debug($"We got {(History<Fred>(_symbols[ticker], 10, Resolution.Daily)).Count()} items from our history request for {ticker} FRED data");
+            }
         }
 
         public override void OnData(Slice slice)
@@ -47,9 +66,11 @@ namespace QuantConnect.DataLibrary.Tests
             if (!data.IsNullOrEmpty())
             {
                 Debug(data.ToString());
-
-                // based on the "JPINTDDMEJPY" Fred Symbol, we will buy or short the underlying equity
-                if (_lastValue != null && data[_fredSymbol].Value > _lastValue)
+                var symbolsWithData = data.Values.Count;
+                var greatestValue = data.Values.Select(x => x.Value).Max();
+                if (symbolsWithData >= 5
+                    && _greatestValue != null
+                    && greatestValue > _greatestValue)
                 {
                     SetHoldings("SPY", 1);
                 }
@@ -58,7 +79,7 @@ namespace QuantConnect.DataLibrary.Tests
                     SetHoldings("SPY", -1);
                 }
 
-                _lastValue = data[_fredSymbol].Value;
+                _greatestValue = greatestValue;
             }
         }
 
