@@ -111,8 +111,12 @@ namespace QuantConnect.DataLibrary.Tests
             Assert.AreEqual(64.0, data.Value);
         }
 
-        [Test]
-        public void GetsCorrectValueInPython()
+        [TestCase("JPINTDDMEJPY")]
+        [TestCase("USINTDMRKTJPY")]
+        [TestCase("TRINTDEXR")]
+        [TestCase("DTWEXM")]
+        [TestCase("CBETHUSD")]
+        public void GetsCorrectValueInPython(string ticker)
         {
             PythonEngine.Initialize();
             dynamic instance;
@@ -128,7 +132,7 @@ class Test(Fred):
                 instance = test.CreateType().GetBaseDataInstance();
             }
 
-            var symbol = Symbol.Create("UMICH/SOC1", 0, "empty");
+            var symbol = Symbol.Create(ticker, 0, "empty");
             var config = new SubscriptionDataConfig(typeof(Fred), symbol,
                 Resolution.Daily, TimeZones.Utc, TimeZones.Utc, true, true, false, true);
 
