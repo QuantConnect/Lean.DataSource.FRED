@@ -21,7 +21,7 @@ class Demonstration(QCAlgorithm):
         self.AddEquity("SPY", Resolution.Daily)
         self.fredSymbol = self.AddData(Fred, "JPINTDDMEJPY", Resolution.Daily).Symbol
 
-        self.lastValue = 0.0;
+        self.lastValue = -1;
         history = self.History(Fred, self.fredSymbol, 10, Resolution.Daily)
         self.Debug(f"We got {len(history)} items from our history request for JPINTDDMEJPY FRED data")
 
@@ -31,7 +31,7 @@ class Demonstration(QCAlgorithm):
         if len(data.Values) != 0:
             self.Debug(str(data[self.fredSymbol]))
 
-            if self.lastValue == None and data[self.fredSymbol].Value > self.lastValue:
+            if self.lastValue == -1 and data[self.fredSymbol].Value > self.lastValue:
                 self.SetHoldings("SPY", 1)
             else:
                 self.SetHoldings("SPY", -1)
