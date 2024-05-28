@@ -102,6 +102,7 @@ namespace QuantConnect.DataLibrary.Tests
             var date = new DateTime(2018, 7, 7);
 
             var newInstance = new Fred();
+            Fred.SetAuthCode("auth-code-dummy-example");
 
             var symbol = Symbol.Create(ticker, 0, "empty");
             var config = new SubscriptionDataConfig(typeof(Fred), symbol,
@@ -120,6 +121,8 @@ namespace QuantConnect.DataLibrary.Tests
         {
             PythonEngine.Initialize();
             dynamic instance;
+            Fred.SetAuthCode("auth-code-dummy-example");
+
             using (Py.GIL())
             {
                 PyObject test = PyModule.FromString("testModule",
