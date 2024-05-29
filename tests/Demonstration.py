@@ -18,21 +18,26 @@ class Demonstration(QCAlgorithm):
         self.SetStartDate(2021, 1, 1)
         self.SetEndDate(2021, 7, 1)
 
-        tickers = ["JPINTDDMEJPY", "USINTDMRKTJPY", "TRINTDEXR", "DTWEXM", "CBETHUSD", "VXGOGCLS", "CHINTDCHFDM", "DCPN3M", "BAMLEMPTPRVICRPITRIV", "VXGDXCLS"]
+        numberOfPoints = {"JPINTDDMEJPY" : 180, "TRINTDEXR" : 180, "CBETHUSD" : 179, "VXGOGCLS" : 126, "DCPN3M" : 114, "BAMLEMPTPRVICRPITRIV" : 129}
         self.symbols = {}
 
         Fred.SetAuthCode("your_authentication_code")
         self.AddEquity("SPY", Resolution.Daily)
-        for ticker in tickers:
+        for ticker in numberOfPoints.keys():
             self.symbols[ticker] = self.AddData(Fred, ticker, Resolution.Daily).Symbol
-            self.Debug(f"We got {len(self.History(Fred, self.symbols[ticker], 10, Resolution.Daily))} items from our history request for {ticker} FRED data")
+
+            historicalDataCount = len(self.History(Fred, self.symbols[ticker], 180, Resolution.Daily))
+            if historicalDataCount < numberOfPoints[ticker]:
+                raise Exception(f"We expected more than {numberOfPoints[ticker]} points for {ticker} FRED symbol, but just {historicalDataCount} points were obtained.");
+
+            self.Debug(f"We got {historicalDataCount} items from our history request for {ticker} FRED data")
 
         self.greatestValue = -1;
 
     def OnData(self, data):
         data = data.Get(Fred)
 
-        if len(data.Values) != 0:
+        if len(data.Values) != 0 and (not self.Portfolio.Invested):
             self.Debug(str(data))
 
             symbolsWithData = len(data.Values)

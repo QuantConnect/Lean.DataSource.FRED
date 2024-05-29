@@ -19,6 +19,7 @@ using System;
 using System.Collections.Generic;
 using Newtonsoft.Json;
 using System.Linq;
+using QuantConnect.Data.UniverseSelection;
 
 namespace QuantConnect.DataSource
 {
@@ -52,7 +53,7 @@ namespace QuantConnect.DataSource
         public override SubscriptionDataSource GetSource(SubscriptionDataConfig config, DateTime date, bool isLiveMode)
         {
             var source = $"https://api.stlouisfed.org/fred/series/observations?file_type=json&observation_start=1998-01-01&api_key={_authCode}&series_id={config.Symbol.Value.ToLowerInvariant()}";
-            return new SubscriptionDataSource(source, SubscriptionTransportMedium.Rest);
+            return new SubscriptionDataSource(source, SubscriptionTransportMedium.Rest, FileFormat.UnfoldingCollection);
         }
 
         /// <summary>
@@ -72,21 +73,18 @@ namespace QuantConnect.DataSource
             }
 
             var json = JsonConvert.DeserializeObject<FredApi>(line);
-
-            var requestedEntry = json.Observations.Where(x => x.Date == date.Date).SingleOrDefault();
-
-            if (requestedEntry == default || requestedEntry.Value == ".")
+            var entries = json.Observations.Where(x => x.Value != ".").Select(x =>
             {
-                return null;
-            }
+                return new Fred
+                {
+                    Symbol = config.Symbol,
+                    Value = x.Value.ToDecimal(),
+                    Time = x.Date,
+                    EndTime = x.Date + TimeSpan.FromDays(1)
+                };
+            });
 
-            return new Fred
-            {
-                Symbol = config.Symbol,
-                Value = requestedEntry.Value.ToDecimal(),
-                Time = requestedEntry.Date,
-                EndTime = requestedEntry.Date + TimeSpan.FromDays(1)
-            };
+            return new BaseDataCollection(date, config.Symbol, entries);
         }
 
         /// <summary>
