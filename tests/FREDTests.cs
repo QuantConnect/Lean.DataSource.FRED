@@ -24,6 +24,7 @@ using NUnit.Framework;
 using QuantConnect.Data;
 using QuantConnect.DataSource;
 using Python.Runtime;
+using QuantConnect.Data.UniverseSelection;
 
 namespace QuantConnect.DataLibrary.Tests
 {
@@ -106,8 +107,8 @@ namespace QuantConnect.DataLibrary.Tests
             var config = new SubscriptionDataConfig(typeof(Fred), symbol,
                 Resolution.Daily, TimeZones.Utc, TimeZones.Utc, true, true, false, true);
 
-            var data = newInstance.Reader(config, _jsonResponse, new DateTime(1998, 1, 1), false);
-            Assert.AreEqual(64.0, data.Value);
+            var data = newInstance.Reader(config, _jsonResponse, new DateTime(1998, 1, 1), false) as BaseDataCollection;
+            Assert.AreEqual(64.0, data.Data.FirstOrDefault()?.Value);
         }
 
         [TestCase("JPINTDDMEJPY")]
@@ -131,14 +132,14 @@ class Test(Fred):
     def __init__(self):
         super().__init__()").GetAttr("Test");
                 instance = test.CreateType().GetBaseDataInstance();
-            }
 
             var symbol = Symbol.Create(ticker, 0, "empty");
             var config = new SubscriptionDataConfig(typeof(Fred), symbol,
                 Resolution.Daily, TimeZones.Utc, TimeZones.Utc, true, true, false, true);
 
-            var data = instance.Reader(config, _jsonResponse, new DateTime(1998, 1, 1), false);
-            Assert.AreEqual(64.0, data.Value);
+            var data = instance.Reader(config, _jsonResponse, new DateTime(1998, 1, 1), false) as BaseDataCollection;
+            Assert.AreEqual(64.0, data.Data.FirstOrDefault()?.Value);
+            }
         }
 
         private void AssertAreEqual(object expected, object result, bool filterByCustomAttributes = false)
