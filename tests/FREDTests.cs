@@ -99,8 +99,6 @@ namespace QuantConnect.DataLibrary.Tests
         [TestCase("CBETHUSD")]
         public void GetsCorrectValue(string ticker)
         {
-            var date = new DateTime(2018, 7, 7);
-
             var newInstance = new Fred();
             Fred.SetAuthCode("auth-code-dummy-example");
 
