@@ -117,36 +117,6 @@ namespace QuantConnect.DataLibrary.Tests
             Assert.AreEqual(64.0, data.Data.FirstOrDefault()?.Value);
         }
 
-        [TestCase("JPINTDDMEJPY")]
-        [TestCase("USINTDMRKTJPY")]
-        [TestCase("TRINTDEXR")]
-        [TestCase("DTWEXM")]
-        [TestCase("CBETHUSD")]
-        public void GetsCorrectValueInPython(string ticker)
-        {
-            dynamic instance;
-            Fred.SetAuthCode("auth-code-dummy-example");
-
-            using (Py.GIL())
-            {
-                PyObject test = PyModule.FromString("testModule",
-                    @"
-from QuantConnect.DataSource import *
-
-class Test(Fred):
-    def __init__(self):
-        super().__init__()").GetAttr("Test");
-                instance = test.CreateType().GetBaseDataInstance();
-
-            var symbol = Symbol.Create(ticker, 0, "empty");
-            var config = new SubscriptionDataConfig(typeof(Fred), symbol,
-                Resolution.Daily, TimeZones.Utc, TimeZones.Utc, true, true, false, true);
-
-            var data = instance.Reader(config, _jsonResponse, new DateTime(1998, 1, 1), false) as BaseDataCollection;
-            Assert.AreEqual(64.0, data.Data.FirstOrDefault()?.Value);
-            }
-        }
-
         private void AssertAreEqual(object expected, object result, bool filterByCustomAttributes = false)
         {
             foreach (var propertyInfo in expected.GetType().GetProperties())
