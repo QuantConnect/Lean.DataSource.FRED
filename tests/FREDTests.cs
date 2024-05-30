@@ -23,7 +23,6 @@ using Newtonsoft.Json;
 using NUnit.Framework;
 using QuantConnect.Data;
 using QuantConnect.DataSource;
-using Python.Runtime;
 using QuantConnect.Data.UniverseSelection;
 
 namespace QuantConnect.DataLibrary.Tests
@@ -52,12 +51,6 @@ namespace QuantConnect.DataLibrary.Tests
             ""value"": ""64.0""
         }
     ]}";
-
-        [SetUp]
-        public void SetUp()
-        {
-            PythonEngine.Initialize();
-        }
 
         [Test]
         public void JsonRoundTrip()
