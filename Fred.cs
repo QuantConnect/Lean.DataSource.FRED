@@ -20,6 +20,7 @@ using System.Collections.Generic;
 using Newtonsoft.Json;
 using System.Linq;
 using QuantConnect.Data.UniverseSelection;
+using QuantConnect.Configuration;
 
 namespace QuantConnect.DataSource
 {
@@ -39,6 +40,26 @@ namespace QuantConnect.DataSource
         {
             get;
             private set;
+        }
+
+        /// <summary>
+        /// Static constructor for the <see cref="Fred"/>
+        /// </summary>
+        static Fred()
+        {
+            // Se the authentication code in FRED if it's set in Config
+            var potentialAuthenticationCode = Config.Get("fred-auth-token");
+            if (!string.IsNullOrEmpty(potentialAuthenticationCode))
+            {
+                SetAuthCode(potentialAuthenticationCode);
+            }
+        }
+
+        /// <summary>
+        /// Default <see cref="Fred"/> constructor
+        /// </summary>
+        public Fred()
+        {
         }
 
         /// <summary>

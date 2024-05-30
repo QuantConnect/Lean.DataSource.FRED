@@ -14,42 +14,42 @@
 from AlgorithmImports import *
 
 class Demonstration(QCAlgorithm):
-    def Initialize(self):
-        self.SetStartDate(2021, 1, 1)
-        self.SetEndDate(2021, 7, 1)
+    def initialize(self): 
+        self.set_start_date(2021, 1, 1)
+        self.set_end_date(2021, 7, 1)
 
-        numberOfPoints = {"JPINTDDMEJPY" : 180, "TRINTDEXR" : 180, "CBETHUSD" : 179, "VXGOGCLS" : 126, "DCPN3M" : 114, "BAMLEMPTPRVICRPITRIV" : 129}
+        number_of_points = {"JPINTDDMEJPY" : 180, "TRINTDEXR" : 180, "CBETHUSD" : 179, "VXGOGCLS" : 126, "DCPN3M" : 114, "BAMLEMPTPRVICRPITRIV" : 129}
         self.symbols = {}
 
-        Fred.SetAuthCode("your_authentication_code")
-        self.AddEquity("SPY", Resolution.Daily)
-        for ticker in numberOfPoints.keys():
-            self.symbols[ticker] = self.AddData(Fred, ticker, Resolution.Daily).Symbol
+        Fred.set_auth_code("your_authentication_code")
+        self.add_equity("SPY", Resolution.DAILY)
+        for ticker in number_of_points.keys():
+            self.symbols[ticker] = self.add_data(Fred, ticker, Resolution.DAILY).symbol
 
-            historicalDataCount = len(self.History(Fred, self.symbols[ticker], 180, Resolution.Daily))
-            if historicalDataCount < numberOfPoints[ticker]:
-                raise Exception(f"We expected more than {numberOfPoints[ticker]} points for {ticker} FRED symbol, but just {historicalDataCount} points were obtained.");
+            historical_data_count = len(self.history(Fred, self.symbols[ticker], 180, Resolution.DAILY))
+            if historical_data_count < number_of_points[ticker]:
+                raise Exception(f"We expected more than {number_of_points[ticker]} points for {ticker} FRED symbol, but just {historical_data_count} points were obtained.");
 
-            self.Debug(f"We got {historicalDataCount} items from our history request for {ticker} FRED data")
+            self.debug(f"We got {historical_data_count} items from our history request for {ticker} FRED data")
 
-        self.greatestValue = -1;
+        self.greatest_value = -1;
 
-    def OnData(self, data):
-        data = data.Get(Fred)
+    def on_data(self, data):
+        data = data.get(Fred)
 
-        if len(data.Values) != 0 and (not self.Portfolio.Invested):
-            self.Debug(str(data))
+        if len(data.Values) != 0 and (not self.portfolio.invested):
+            self.debug(str(data))
 
-            symbolsWithData = len(data.Values)
-            greatestValue = max(list(map(lambda x: x.Value, data.Values)))
+            symbols_with_data = len(data.Values)
+            greatest_value = max(list(map(lambda x: x.Value, data.Values)))
 
-            if symbolsWithData >= 5 and self.greatestValue != -1 and greatestValue > self.greatestValue:
-                self.SetHoldings("SPY", 1)
+            if symbols_with_data >= 5 and self.greatest_value != -1 and greatest_value > self.greatest_value:
+                self.set_holdings("SPY", 1)
             else:
-                self.SetHoldings("SPY", -1)
+                self.set_holdings("SPY", -1)
 
-            self.greatestValue = greatestValue
+            self.greatest_value = greatest_value
 
-    def OnOrderEvent(self, orderEvent):
-        if orderEvent.Status == 3:
-            self.Debug(f"Purchased Stock: {orderEvent.Symbol}")
+    def on_order_event(self, order_event):
+        if order_event.status == 3:
+            self.debug(f"Purchased Stock: {order_event.symbol}")

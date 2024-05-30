@@ -53,6 +53,12 @@ namespace QuantConnect.DataLibrary.Tests
         }
     ]}";
 
+        [SetUp]
+        public void SetUp()
+        {
+            PythonEngine.Initialize();
+        }
+
         [Test]
         public void JsonRoundTrip()
         {
@@ -118,7 +124,6 @@ namespace QuantConnect.DataLibrary.Tests
         [TestCase("CBETHUSD")]
         public void GetsCorrectValueInPython(string ticker)
         {
-            PythonEngine.Initialize();
             dynamic instance;
             Fred.SetAuthCode("auth-code-dummy-example");
 
