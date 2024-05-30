@@ -14,7 +14,7 @@
 from AlgorithmImports import *
 
 class Demonstration(QCAlgorithm):
-    def initialize(self): 
+    def initialize(self):
         self.set_start_date(2021, 1, 1)
         self.set_end_date(2021, 7, 1)
 
