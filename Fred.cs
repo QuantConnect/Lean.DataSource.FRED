@@ -17,16 +17,50 @@
 using QuantConnect.Data;
 using System;
 using System.Collections.Generic;
-using System.IO;
+using Newtonsoft.Json;
+using System.Linq;
+using QuantConnect.Data.UniverseSelection;
+using QuantConnect.Configuration;
 
 namespace QuantConnect.DataSource
 {
     public partial class Fred : BaseData
     {
+        private static string _authCode = "";
+
         /// <summary>
         /// Data source ID
         /// </summary>
         public static int DataSourceId { get; } = 2010;
+
+        /// <summary>
+        /// Flag indicating whether or not the FRED auth code has been set yet
+        /// </summary>
+        public static bool IsAuthCodeSet
+        {
+            get;
+            private set;
+        }
+
+        /// <summary>
+        /// Static constructor for the <see cref="Fred"/>
+        /// </summary>
+        static Fred()
+        {
+            // Se the authentication code in FRED if it's set in Config
+            var potentialAuthenticationCode = Config.Get("fred-auth-token");
+            if (!string.IsNullOrEmpty(potentialAuthenticationCode))
+            {
+                SetAuthCode(potentialAuthenticationCode);
+            }
+        }
+
+        /// <summary>
+        /// Default <see cref="Fred"/> constructor
+        /// </summary>
+        public Fred()
+        {
+        }
 
         /// <summary>
         /// Return the URL string source of the file. This will be converted to a stream
@@ -39,13 +73,8 @@ namespace QuantConnect.DataSource
         /// </returns>
         public override SubscriptionDataSource GetSource(SubscriptionDataConfig config, DateTime date, bool isLiveMode)
         {
-            var localFilePath = Path.Combine(
-                Globals.DataFolder,
-                "alternative",
-                "fred",
-                $"{config.Symbol.Value.ToLowerInvariant()}.csv");
-
-            return new SubscriptionDataSource(localFilePath, SubscriptionTransportMedium.LocalFile);
+            var source = $"https://api.stlouisfed.org/fred/series/observations?file_type=json&observation_start=1998-01-01&api_key={_authCode}&series_id={config.Symbol.Value.ToLowerInvariant()}";
+            return new SubscriptionDataSource(source, SubscriptionTransportMedium.RemoteFile, FileFormat.UnfoldingCollection);
         }
 
         /// <summary>
@@ -55,19 +84,40 @@ namespace QuantConnect.DataSource
         /// <param name="line">Line of data</param>
         /// <param name="date">Date</param>
         /// <param name="isLiveMode">Is live mode</param>
-        /// <returns>New instance of USEnergy</returns>
+        /// <returns>New instance of FRED data</returns>
         public override BaseData Reader(SubscriptionDataConfig config, string line, DateTime date, bool isLiveMode)
         {
-            var csv = line.Split(',');
-
-            var parsedDate = Parse.DateTimeExact(csv[0], "yyyyMMdd");
-            return new Fred
+            if (!IsAuthCodeSet)
             {
-                Symbol = config.Symbol,
-                Value = Parse.Decimal(csv[1]),
-                Time = parsedDate,
-                EndTime = parsedDate + TimeSpan.FromDays(1)
-            };
+                throw new ArgumentNullException("The authentication code has not been set yet. " +
+                    "Please, set your FRED authentication code first, before requesting data.");
+            }
+
+            var json = JsonConvert.DeserializeObject<FredApi>(line);
+            var entries = json.Observations.Where(x => x.Value != ".").Select(x =>
+            {
+                return new Fred
+                {
+                    Symbol = config.Symbol,
+                    Value = x.Value.ToDecimal(),
+                    Time = x.Date,
+                    EndTime = x.Date + TimeSpan.FromDays(1)
+                };
+            });
+
+            return new BaseDataCollection(date, config.Symbol, entries);
+        }
+
+        /// <summary>
+        /// Set the FRED authentication code to request the data.
+        /// </summary>
+        /// <param name="authCode"></param>
+        public static void SetAuthCode(string authCode)
+        {
+            if (string.IsNullOrWhiteSpace(authCode)) return;
+
+            _authCode = authCode;
+            IsAuthCodeSet = true;
         }
 
         /// <summary>

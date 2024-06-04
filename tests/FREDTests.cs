@@ -23,12 +23,35 @@ using Newtonsoft.Json;
 using NUnit.Framework;
 using QuantConnect.Data;
 using QuantConnect.DataSource;
+using QuantConnect.Data.UniverseSelection;
 
 namespace QuantConnect.DataLibrary.Tests
 {
     [TestFixture]
     public class FREDTests
     {
+        private const string _jsonResponse = @"{
+    ""realtime_start"": ""2024-05-22"",
+    ""realtime_end"": ""2024-05-22"",
+    ""observation_start"": ""1998-01-01"",
+    ""observation_end"": ""9999-12-31"",
+    ""units"": ""lin"",
+    ""output_type"": 1,
+    ""file_type"": ""json"",
+    ""order_by"": ""observation_date"",
+    ""sort_order"": ""asc"",
+    ""count"": 9587,
+    ""offset"": 0,
+    ""limit"": 100000,
+    ""observations"": [
+        {
+            ""realtime_start"": ""2024-05-22"",
+            ""realtime_end"": ""2024-05-22"",
+            ""date"": ""1998-01-01"",
+            ""value"": ""64.0""
+        }
+    ]}";
+
         [Test]
         public void JsonRoundTrip()
         {
@@ -67,6 +90,24 @@ namespace QuantConnect.DataLibrary.Tests
             var result = expected.Clone();
 
             AssertAreEqual(expected, result);
+        }
+
+        [TestCase("JPINTDDMEJPY")]
+        [TestCase("USINTDMRKTJPY")]
+        [TestCase("TRINTDEXR")]
+        [TestCase("DTWEXM")]
+        [TestCase("CBETHUSD")]
+        public void GetsCorrectValue(string ticker)
+        {
+            var newInstance = new Fred();
+            Fred.SetAuthCode("auth-code-dummy-example");
+
+            var symbol = Symbol.Create(ticker, 0, "empty");
+            var config = new SubscriptionDataConfig(typeof(Fred), symbol,
+                Resolution.Daily, TimeZones.Utc, TimeZones.Utc, true, true, false, true);
+
+            var data = newInstance.Reader(config, _jsonResponse, new DateTime(1998, 1, 1), false) as BaseDataCollection;
+            Assert.AreEqual(64.0, data.Data.FirstOrDefault()?.Value);
         }
 
         private void AssertAreEqual(object expected, object result, bool filterByCustomAttributes = false)
