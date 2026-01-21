@@ -27,6 +27,7 @@ namespace QuantConnect.DataSource
     public partial class Fred : BaseData
     {
         private static string _authCode = "";
+        private readonly string _endpoint = "https://www.quantconnect.com/api/v2/proxy/stlouisfed/";
 
         /// <summary>
         /// Data source ID
@@ -73,7 +74,7 @@ namespace QuantConnect.DataSource
         /// </returns>
         public override SubscriptionDataSource GetSource(SubscriptionDataConfig config, DateTime date, bool isLiveMode)
         {
-            var source = $"https://api.stlouisfed.org/fred/series/observations?file_type=json&observation_start=1998-01-01&api_key={_authCode}&series_id={config.Symbol.Value.ToLowerInvariant()}";
+            var source = $"{_endpoint}/fred/series/observations?file_type=json&observation_start=1998-01-01&api_key={_authCode}&series_id={config.Symbol.Value.ToLowerInvariant()}";
             return new SubscriptionDataSource(source, SubscriptionTransportMedium.RemoteFile, FileFormat.UnfoldingCollection);
         }
 

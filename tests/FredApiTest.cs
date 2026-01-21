@@ -40,7 +40,8 @@ namespace QuantConnect.DataLibrary.Tests
             var subscriptionDataConfig = new SubscriptionDataConfig(typeof(BaseData), symbol, Resolution.Daily,
                 DateTimeZone.Utc, DateTimeZone.Utc, false, false, false, true);
 
-            var fredApi = new FredApi();
+            Fred.SetAuthCode("TEST_API_KEY");
+            var fredApi = new Fred();
             // Act
             var data = (BaseDataCollection)fredApi.Reader(subscriptionDataConfig, content, new DateTime(2019, 01, 04), false);
             // Assert
